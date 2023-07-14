@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="register.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/register.css">
+    <!-- FontAwesome 4.7.0 CDN -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+        integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.css">
+    <link rel="stylesheet" href="./javascript/jquery-ui-1.13.2.custom/jquery-ui.min.css">
+    <style>
+        .success-message {
+            color: green
+        }
+
+        .error-message {
+            color: red;
+        }
+
+        .required::after {
+            content: "*";
+            color: red;
+            font-size: 20px;
+            margin: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <!--REGISTER HTML-->
+    <div class="bg">
+        <div class="container">
+            <div class="row">
+                <div class="col-1"></div>
+                <div class="col-md-10 my-3 ">
+                    <div class="card mx-auto">
+
+                        <form role="form" action="" method="post" class="registration-form">
+                            <fieldset>
+                                <div class="text-center">
+                                    <h3 class="text-center">Step 1 / 3</h3>
+                                    <p class="text-center">Student Personal Information:</p>
+                                </div>
+                                <div class="row ">
+                                    <div class="col mx-4">
+                                        <label for="inputEmail4" class="form-label mx-2 required">Student Name</label>
+                                        <input type="text" class="form-control " placeholder="First name"
+                                            aria-label="First name">
+                                    </div>
+
+                                    <div class="col  mx-4">
+                                        <label for="inputEmail4" class="form-label mx-2 required">Date of birth</label>
+                                        <input type="text" class="form-control" placeholder="Day/Month/Year"
+                                            aria-label="dob" id="dob">
+                                    </div>
+                                </div>
+                                <div class="row ">
+
+                                    <div class="col  mx-4">
+                                        <label for="inputEmail4" class="form-label mx-2 required">Parents Name</label>
+                                        <input type="text" class="form-control" placeholder="Parents Name"
+                                            aria-label="First name">
+                                    </div>
+                                    <div class="col mx-4">
+                                        <label for="inputEmail4" class="form-label mx-2 required">Relationship with
+                                            Parents</label>
+                                        <select class="form-select" aria-label="Default select example"
+                                            id="selectOption">
+                                            <option selected>Parents Relationship</option>
+                                            <option value="father">Father</option>
+                                            <option value="mother">Mother</option>
+                                            <option value="others">Others</option>
+                                        </select>
+                                        <div id="otherOptionContainer" class="invisible">
+                                            <label for="otherOption">Please specify:</label>
+                                            <input type="text" class="form-control" placeholder="Parents Name"
+                                                aria-label="First name" id="otherOption">
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <hr>
+                                <div class="row">
+
+                                    <div class="col mx-4">
+                                        <div class="col mx-4 mx-auto">
+                                            <label for="inputEmail4" class="form-label mx-2 required ">Whatsapp
+                                                Number</label>
+                                            <input type="text" class="form-control" placeholder="Whatsapp Number"
+                                                aria-label="Whatsapp Number" id="phoneNumber">
+                                            <div id="recaptcha-container" class="w-50 h-50 my-2"></div>
+
+                                        </div>
+
+                                    </div>
+                                    <div class="col mx-4">
+                                        <label for="inputEmail4" class="form-label mx-2 required">Enter otp:</label>
+                                        <input type="text" class="form-control" placeholder="Enter Opt:"
+                                            aria-label="Whatsapp Number" id="otp">
+
+                                        <button type="button" id="sendOTPButton" class="btn btn-danger my-auto">Send
+                                            OTP</button>
+                                        <button type="button" id="verifyOTPButton" class="btn btn-success my-4">Verify
+                                            OTP</button>
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="row my-3">
+                                    <button type="button" class="btn btn-next text-white w-25 mx-auto"
+                                        style="background-color: #087C94 ;">Next</button>
+                                </div>
+                            </fieldset>
+
+                            <fieldset>
+                                <div class="text-center">
+                                    <h3 class="text-center">Step 2 / 3</h3>
+                                    <p class="text-center"></p>
+                                </div>
+                                <div class="row">
+                                    <div class="col mx-4">
+                                        <label for="inputEmail4" class="form-label mx-2">Category for Round1</label>
+                                        <select class="form-select" aria-label="Default select example">
+                                            <option selected>Choose your category</option>
+                                            <option value="8-9">8-9 years</option>
+                                            <option value="10-11">10-11 years</option>
+                                            <option value="12-13">12-13 years</option>
+                                            <option value="14-15">14-15 years</option>
+                                            <option value="16-17">16-17 years</option>
+                                        </select>
+                                    </div>
+                                    <div class="col mx-4">
+                                        <label for="inputEmail4" class="form-label mx-2">Zone</label>
+                                        <select class="form-select" aria-label="Default select example">
+                                            <option selected>Choose your zone</option>
+                                            <option value="East">East</option>
+                                            <option value="West">West</option>
+                                            <option value="North">North</option>
+                                            <option value="South">South</option>
+                                            <option value="Central">Central</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="row ">
+
+                                    <div class="col  mx-4">
+                                        <label for="inputEmail4" class="form-label mx-2">City</label>
+                                        <input type="text" class="form-control" placeholder="City"
+                                            aria-label="First name">
+                                    </div>
+                                    <div class="col  mx-4">
+                                        <label for="inputEmail4" class="form-label mx-2">Pin Code</label>
+                                        <input type="text" class="form-control" placeholder="Pin code"
+                                            aria-label="First name">
+                                    </div>
+                                </div>
+                                <div class="row mx-5 my-3">
+                                    <button type="button" class="btn btn-previous text-white w-25 "
+                                        style="background-color: #087C94 ;">Previous</button>
+                                    <button type="button" class="btn btn-next text-white w-25 mx-auto"
+                                        style="background-color: #087C94 ;">Next</button>
+                                </div>
+                            </fieldset>
+
+                            <fieldset>
+                                <div class="text-center">
+                                    <h3 class="text-center">Step 3 / 3</h3>
+                                    <p class="text-center"></p>
+                                </div>
+
+                                <div class="row ">
+
+                                    <div class="col  mx-4">
+                                        <label for="inputEmail4" class="form-label mx-2">School Name</label>
+                                        <input type="text" class="form-control" placeholder="School Name"
+                                            aria-label="First name">
+                                    </div>
+
+                                </div>
+                                <div class="row ">
+
+                                    <div class="col  mx-4">
+                                        <label for="inputEmail4" class="form-label mx-2">Class</label>
+                                        <input type="text" class="form-control" placeholder="Class"
+                                            aria-label="First name">
+                                    </div>
+                                    <div class="col  mx-4">
+                                        <label for="inputEmail4" class="form-label mx-2">Section</label>
+                                        <input type="text" class="form-control" placeholder="Section"
+                                            aria-label="First name">
+                                    </div>
+                                </div>
+                                <div class="row mx-5 my-3">
+                                    <button type="button" class="btn btn-previous text-white w-25 "
+                                        style="background-color: #087C94 ;">Previous</button>
+                                    <button type="button" class="btn btn-next text-white w-25 mx-auto"
+                                        style="background-color: #087C94 ;">Next</button>
+                                </div>
+                            </fieldset>
+                            <fieldset>
+                                <div class="text-center">
+                                    <h3 class="text-center">Step 4 / 4</h3>
+                                    <p class="text-center"></p>
+                                </div>
+                                <div class="row">
+                                    <div class="col  mx-4">
+                                        <label for="inputEmail4" class="form-label mx-2">Email</label>
+                                        <input type="email" class="form-control" placeholder="Email" aria-label="email"
+                                            id="email">
+                                    </div>
+                                    <div class="col  mx-4">
+                                        <label for="inputEmail4" class="form-label mx-2">Retype Email</label>
+                                        <input type="email" class="form-control" placeholder="retypeemail"
+                                            aria-label="retypeemail" id="retypeemail">
+                                    </div>
+                                </div>
+                                <div class="row ">
+
+                                    <div class="col  mx-4">
+                                        <label for="inputEmail4" class="form-label mx-2">Password</label>
+                                        <input type="password" class="form-control" placeholder="password"
+                                            aria-label="First name" id="password">
+                                    </div>
+                                    <div class="col  mx-4">
+                                        <label for="inputEmail4" class="form-label mx-2">Re-Type
+                                            Password</label>
+                                        <input type="password" class="form-control" placeholder="retypepassword"
+                                            aria-label="First name" id="confirmpassword">
+                                        <div class="form-text confirm-message"></div>
+                                    </div>
+                                </div>
+                                <div class="row mx-5 my-3">
+                                    <button type="button" class="btn btn-previous text-white w-25 "
+                                        style="background-color: #087C94 ;">Previous</button>
+                                    <button type="button" class="btn btn-next text-white w-25 mx-auto"
+                                        style="background-color: #087C94 ;" id="nextbtn" disabled>Next</button>
+                                </div>
+                            </fieldset>
+                            <fieldset>
+                                <div class="text-center">
+                                    <h3 class="text-center">Step 4 / 3</h3>
+                                    <p class="text-center"></p>
+                                </div>
+                                <div class="row">
+                                    <div class="col  mx-4">
+                                        <label for="inputEmail4" class="form-label mx-2">Email</label>
+                                        <input type="email" class="form-control" placeholder="Email"
+                                            aria-label="First name">
+                                    </div>
+                                    <div class="col  mx-4">
+                                        <label for="inputEmail4" class="form-label mx-2">Retype Email</label>
+                                        <input type="email" class="form-control" placeholder="retypeemail"
+                                            aria-label="First name">
+                                    </div>
+                                </div>
+
+                                <div class="row mx-5 my-3">
+                                    <button type="button" class="btn btn-previous text-white w-25 "
+                                        style="background-color: #087C94 ;">Previous</button>
+                                    <button type="button" class="btn btn-next text-white w-25 mx-auto"
+                                        style="background-color: #087C94 ;">Next</button>
+                                </div>
+                            </fieldset>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-1"></div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="./javascript/jquery.backstretch.min.js"></script>
+
+    <script src="./javascript/register.js"></script>
+    <script src="./javascript/jquery-ui-1.13.2.custom/jquery-ui.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.12.1/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.12.1/firebase-auth-compat.js"></script>
+
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#dob").datepicker({
+                changeMonth: true,
+                changeYear: true,
+                dateFormat: 'dd/mm/yy',
+                yearRange: "2006:2016",
+                maxDate: new Date('2016-01-01'),
+                minDate: new Date('2006-01-01')
+            });
+            $('#selectOption').change(function () {
+                var selectedOption = $(this).val();
+                var otherOptionContainer = $('#otherOptionContainer');
+
+                if (selectedOption === 'others') {
+                    otherOptionContainer.removeClass('invisible');
+                    console.log("others");
+                } else {
+                    otherOptionContainer.addClass('invisible');
+                }
+            });
+        });
+        var appVerifier;
+        var confirmationResult;
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        const firebaseConfig = {
+            apiKey: "AIzaSyDVFX5JVcbyc_Sj9FNY2uSpJziJ_0_DnxQ",
+            authDomain: "kreativitychallenge.firebaseapp.com",
+            projectId: "kreativitychallenge",
+            storageBucket: "kreativitychallenge.appspot.com",
+            messagingSenderId: "445939710159",
+            appId: "1:445939710159:web:ae9a8979dcba712d719fba",
+            measurementId: "G-PR6YQNQPC8"
+        };
+        firebase.initializeApp(firebaseConfig);
+
+        // Initialize the reCAPTCHA verifier
+        window.onload = function () {
+            appVerifier = new firebase.auth.RecaptchaVerifier('recaptcha-container');
+        };
+
+        // Send OTP
+        document.getElementById('sendOTPButton').addEventListener('click', function () {
+            var phoneNumber = document.getElementById('phoneNumber').value;
+
+            firebase.auth().signInWithPhoneNumber(phoneNumber, appVerifier)
+                .then(function (result) {
+                    // OTP sent successfully
+                    confirmationResult = result;
+                    console.log('OTP sent successfully');
+                })
+                .catch(function (error) {
+                    // Handle errors
+                    console.error('Failed to send OTP:', error);
+                });
+        });
+
+        // Verify OTP
+        document.getElementById('verifyOTPButton').addEventListener('click', function () {
+            var otp = document.getElementById('otp').value;
+
+            confirmationResult.confirm(otp)
+                .then(function (result) {
+                    // Phone number verification successful
+                    var user = result.user;
+
+                    // Save the verified phone number and additional field in Firebase
+                    var phoneNumber = user.phoneNumber;
+                    var additionalField = document.getElementById('additionalField').value;
+
+                    var userData = {
+                        phoneNumber: phoneNumber,
+                        additionalField: additionalField
+                    };
+
+                    return firebase.database().ref('users/' + user.uid).set(userData);
+                })
+                .then(function () {
+                    console.log('Phone number and additional field stored successfully');
+                })
+                .catch(function (error) {
+                    // Handle errors
+                    console.error('Phone number verification failed:', error);
+                });
+        });
+
+
+    </script>
+</body>
+
+</html>
