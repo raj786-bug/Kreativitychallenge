@@ -356,6 +356,7 @@ a:hover {
     transform: translateX(0);
   }
 }
+
 /* card hover animation*/
 .card2 {
   transition: transform 0.3s;
@@ -364,6 +365,7 @@ a:hover {
 .card2:hover {
   transform: scale(1.1);
 }
+
 /* shaking*/
 .card3 {
   transition: transform 0.3s;
@@ -378,19 +380,24 @@ a:hover {
   0% {
     transform: translateX(0);
   }
+
   25% {
     transform: translateX(-5px) rotate(-5deg);
   }
+
   50% {
     transform: translateX(5px) rotate(5deg);
   }
+
   75% {
     transform: translateX(-5px) rotate(-5deg);
   }
+
   100% {
     transform: translateX(0) rotate(0);
   }
 }
+
 /* zoom out */
 .button {
   transition: transform 0.3s;
@@ -398,4 +405,95 @@ a:hover {
 
 .button:hover {
   transform: scale(0.9);
+}
+
+@media (max-width: 768px) {
+  .hero-image {
+    height: 50px;
+    /* Adjust the height for smaller screens */
+  }
+}
+
+.element {
+  padding-bottom: 50px;
+  /* Default padding for all screen sizes */
+
+  
+
+  /* Responsive padding for small devices (up to 576px) */
+  @media (max-width: 576px) {
+
+    padding-top: 40px;
+
+  }
+
+  /* Responsive padding for medium devices (between 576px and 992px) */
+  @media (min-width: 577px) and (max-width: 992px) {
+
+    padding-bottom: 45px;
+  }
+
+  /* Responsive padding for large devices (above 992px) */
+  @media (min-width: 993px) {
+    padding-bottom: 100px;
+
+  }
+}
+
+.carousel-caption1 {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+
+
+.text1 {
+  font-size: 100px; /* Default font size for all screen sizes */
+
+  @media (max-width: 280px) {
+    font-size: 8px;
+    font-family: sans-serif;
+    font-weight: bold;
+    color: white;
+  }
+  /* Responsive font size for small devices (up to 576px) */
+  @media (min-width:281px) and(max-width: 359px) {
+    font-size: 12px;
+    font-family: sans-serif;
+    font-weight: bold;
+    color: white;
+  }
+    /* Responsive font size for small devices (up to 576px) */
+    @media (min-width:360px) and (max-width: 390px) {
+      font-size: 12px;
+      font-family: sans-serif;
+      font-weight: bold;
+      color: white;
+    }
+  /* Responsive font size for small devices (up to 576px) */
+  @media (min-width:391px) and (max-width: 576px) {
+    font-size: 12px;
+    font-family: sans-serif;
+    font-weight: bold;
+    color: white;
+  }
+
+  /* Responsive font size for medium devices (between 577px and 992px) */
+  @media (min-width: 577px) and (max-width: 992px) {
+    font-size: 24px;
+    font-family: sans-serif;
+    font-weight: bold;
+    color: white;
+  }
+
+  /* Responsive font size for large devices (above 992px) */
+  @media (min-width: 993px) {
+    font-size: 30px;
+    font-family: sans-serif;
+    font-weight: bold;
+    color: white;
+  }
 }

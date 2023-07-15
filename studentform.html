@@ -89,11 +89,11 @@
 
                                     <div class="col mx-4">
                                         <div class="col mx-4 mx-auto">
-                                            <label for="inputEmail4" class="form-label mx-2 required ">Whatsapp
-                                                Number</label>
-                                            <input type="text" class="form-control" placeholder="Whatsapp Number"
-                                                aria-label="Whatsapp Number" id="phoneNumber">
-                                            <div id="recaptcha-container" class="w-50 h-50 my-2"></div>
+                                            <h2>OTP Verification</h2>
+                                            <input type="text" id="phoneNumber" placeholder="Phone Number">
+                                            <div id="recaptcha-container"></div>
+                                            <input type="text" id="captcha" placeholder="Enter CAPTCHA">
+                                            <button id="verifyButton">Verify</button>
 
                                         </div>
 
@@ -279,8 +279,9 @@
 
     <script src="./javascript/register.js"></script>
     <script src="./javascript/jquery-ui-1.13.2.custom/jquery-ui.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/9.12.1/firebase-app-compat.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/9.12.1/firebase-auth-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.8.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.8.0/firebase-auth.js"></script>
+
 
 
     <script type="text/javascript">
@@ -305,10 +306,9 @@
                 }
             });
         });
-        var appVerifier;
-        var confirmationResult;
-        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-        const firebaseConfig = {
+        var firebaseConfig = {
+            // Your Firebase project configuration
+            // apiKey, authDomain, etc.
             apiKey: "AIzaSyDVFX5JVcbyc_Sj9FNY2uSpJziJ_0_DnxQ",
             authDomain: "kreativitychallenge.firebaseapp.com",
             projectId: "kreativitychallenge",
@@ -317,57 +317,44 @@
             appId: "1:445939710159:web:ae9a8979dcba712d719fba",
             measurementId: "G-PR6YQNQPC8"
         };
+
         firebase.initializeApp(firebaseConfig);
+        var phoneNumberInput = document.getElementById('phoneNumber');
+        var captchaInput = document.getElementById('captcha');
+        var verifyButton = document.getElementById('verifyButton');
 
-        // Initialize the reCAPTCHA verifier
-        window.onload = function () {
-            appVerifier = new firebase.auth.RecaptchaVerifier('recaptcha-container');
-        };
+        verifyButton.addEventListener('click', function () {
+            var phoneNumber = phoneNumberInput.value;
+            var captchaCode = captchaInput.value;
+            var appVerifier = new firebase.auth.RecaptchaVerifier('recaptcha-container', {
+                'size': 'normal',
+                'callback': function (response) {
+                    // CAPTCHA verification completed successfully
+                    firebase
+                        .auth()
+                        .signInWithPhoneNumber(phoneNumber, appVerifier)
+                        .then(function (confirmationResult) {
+                            var verificationCode = prompt('Enter the verification code:');
+                            return confirmationResult.confirm(verificationCode);
+                        })
+                        .then(function (result) {
+                            var user = result.user;
+                            console.log('Phone number verification successful:', user);
+                        })
+                        .catch(function (error) {
+                            console.error('Phone number verification failed:', error);
+                        });
+                },
+                'expired-callback': function () {
+                    // CAPTCHA verification expired
+                    console.error('CAPTCHA verification expired');
+                }
+            });
 
-        // Send OTP
-        document.getElementById('sendOTPButton').addEventListener('click', function () {
-            var phoneNumber = document.getElementById('phoneNumber').value;
-
-            firebase.auth().signInWithPhoneNumber(phoneNumber, appVerifier)
-                .then(function (result) {
-                    // OTP sent successfully
-                    confirmationResult = result;
-                    console.log('OTP sent successfully');
-                })
-                .catch(function (error) {
-                    // Handle errors
-                    console.error('Failed to send OTP:', error);
-                });
+            // Render the CAPTCHA
+            appVerifier.render();
         });
 
-        // Verify OTP
-        document.getElementById('verifyOTPButton').addEventListener('click', function () {
-            var otp = document.getElementById('otp').value;
-
-            confirmationResult.confirm(otp)
-                .then(function (result) {
-                    // Phone number verification successful
-                    var user = result.user;
-
-                    // Save the verified phone number and additional field in Firebase
-                    var phoneNumber = user.phoneNumber;
-                    var additionalField = document.getElementById('additionalField').value;
-
-                    var userData = {
-                        phoneNumber: phoneNumber,
-                        additionalField: additionalField
-                    };
-
-                    return firebase.database().ref('users/' + user.uid).set(userData);
-                })
-                .then(function () {
-                    console.log('Phone number and additional field stored successfully');
-                })
-                .catch(function (error) {
-                    // Handle errors
-                    console.error('Phone number verification failed:', error);
-                });
-        });
 
 
     </script>
