@@ -525,19 +525,19 @@ a:hover {
   display: block;
 }
 /* rewards and prizes*/
-.card5 {
+.card6 {
   margin-top: 20px;
 }
 
-.card-header5 {
+.card-header6 {
   cursor: pointer;
 }
 
-.card-body5 {
+.card-body6 {
   display: none;
 }
 
-.card-body5.show {
+.card-body6.show {
   display: block;
 }
 

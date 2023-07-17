@@ -120,7 +120,7 @@ function toggleSection(sectionNumber) {
     var selectedSection = document.getElementById("section" + sectionNumber);
 
     // Hide all sections
-    var sections = document.getElementsByClassName("card-body5");
+    var sections = document.getElementsByClassName("card-body6");
     for (var i = 0; i < sections.length; i++) {
         sections[i].classList.remove("show");
         sections[i].classList.add("d-none");
