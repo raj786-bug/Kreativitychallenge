@@ -524,5 +524,20 @@ a:hover {
 .card-body5.show {
   display: block;
 }
+/* rewards and prizes*/
+.card5 {
+  margin-top: 20px;
+}
 
+.card-header5 {
+  cursor: pointer;
+}
+
+.card-body5 {
+  display: none;
+}
+
+.card-body5.show {
+  display: block;
+}
 

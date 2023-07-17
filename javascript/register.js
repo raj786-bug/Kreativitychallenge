@@ -91,21 +91,5 @@ $('#password, #confirmpassword').on('keyup', function () {
 
 });
 /*form alert*/
-$(document).ready(function () {
-    $('#submit').focus(function () {
-        $('.alert').alert('close');
-        $('#alertBox').alert();
-    });
 
-    $('#alertOkBtn').click(function () {
-        $('#alertBox').alert('close');
-    });
-
-    $('#submit').click(function () {
-        alert('Form submitted!');
-        setTimeout(function () {
-            window.location.href = 'Website Creation/index.html'; // Replace with your desired URL
-        }, 1000); // Delay in milliseconds (1 second)
-    });
-});
 
