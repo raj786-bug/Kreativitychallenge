@@ -109,27 +109,4 @@ function toggleSection(sectionNumber) {
     activeSection = sectionNumber;
 }
 
-var activeSection = 5; // Set the default active section
 
-// Show the default section on page load
-document.addEventListener("DOMContentLoaded", function (event) {
-    var defaultSection = document.getElementById("section" + activeSection);
-    defaultSection.classList.add("show");
-});
-function toggleSection(sectionNumber) {
-    var selectedSection = document.getElementById("section" + sectionNumber);
-
-    // Hide all sections
-    var sections = document.getElementsByClassName("card-body6");
-    for (var i = 0; i < sections.length; i++) {
-        sections[i].classList.remove("show");
-        sections[i].classList.add("d-none");
-    }
-
-    // Show the selected section
-    selectedSection.classList.add("show");
-    selectedSection.classList.remove("d-none");
-
-    // Update the active section
-    activeSection = sectionNumber;
-}
