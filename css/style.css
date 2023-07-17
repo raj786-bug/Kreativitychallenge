@@ -3,7 +3,9 @@
   padding: 0;
   font-family: sans-serif;
 }
-
+body {
+  height: 100%;
+}
 
 .card {
   width: 90%;
@@ -418,7 +420,7 @@ a:hover {
   padding-bottom: 50px;
   /* Default padding for all screen sizes */
 
-  
+
 
   /* Responsive padding for small devices (up to 576px) */
   @media (max-width: 576px) {
@@ -451,28 +453,35 @@ a:hover {
 
 
 .text1 {
-  font-size: 100px; /* Default font size for all screen sizes */
+  font-size: 10px;
+  /* Default font size for all screen sizes */
+  font-family: sans-serif;
+  font-weight: bold;
+  color: white;
 
   @media (max-width: 280px) {
-    font-size: 8px;
+    font-size: 10px;
     font-family: sans-serif;
     font-weight: bold;
     color: white;
   }
+
   /* Responsive font size for small devices (up to 576px) */
-  @media (min-width:281px) and(max-width: 359px) {
+  @media (min-width:281px) and(max-width: 356px) {
+    font-size: 10px;
+    font-family: sans-serif;
+    font-weight: bold;
+    color: white;
+  }
+
+  /* Responsive font size for small devices (up to 576px) */
+  @media (min-width:360px) and (max-width: 390px) {
     font-size: 12px;
     font-family: sans-serif;
     font-weight: bold;
     color: white;
   }
-    /* Responsive font size for small devices (up to 576px) */
-    @media (min-width:360px) and (max-width: 390px) {
-      font-size: 12px;
-      font-family: sans-serif;
-      font-weight: bold;
-      color: white;
-    }
+
   /* Responsive font size for small devices (up to 576px) */
   @media (min-width:391px) and (max-width: 576px) {
     font-size: 12px;
@@ -496,4 +505,21 @@ a:hover {
     font-weight: bold;
     color: white;
   }
+}
+
+/* 5 cards button*/
+.card5 {
+  margin-top: 20px;
+}
+
+.card-header5 {
+  cursor: pointer;
+}
+
+.card-body5 {
+  display: none;
+}
+
+.card-body5.show {
+  display: block;
 }

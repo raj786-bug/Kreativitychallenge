@@ -25,14 +25,14 @@
     <!--Header-->
     <div class="container">
         <div class="row my-1">
-            <div class=" col-xxl-4 col-xl-5 col-lg-3 col-md-12 col-sm-12 mx-auto mt-1">
+            <div class=" col-xxl-4 col-xl-5 col-lg-12 col-md-12 col-sm-12 mx-auto mt-1">
                 <img src="images/logo_kreativity_league-removebg-preview.png" alt="" class="img-fluid "
                     style="width: 150px; height: 200px;" cl>
             </div>
-            <div class="col-xxl-6 col-xl-4 col-lg-6 col-md-12 col-sm-1 mx-auto">
+            <div class="col-xxl-6 col-xl-4 col-lg-1 col-md-1 col-sm-1 mx-auto">
 
             </div>
-            <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-12 col-sm-12 my-auto mx-auto">
+            <div class="col-xxl-3 col-xl-3 col-lg-12 col-md-12 col-sm-12 my-auto mx-auto">
                 <button type="button" class="btn btn-lg btn-danger font-weight-bold mx-2"
                     style="background-color:#FF4F00;">Login</button>
                 <a type="button" class="btn btn-lg btn-success font-weight-bold" style="background-color: #087C94;"
@@ -119,24 +119,24 @@
                 <div class="carousel-item active" data-bs-interval="5000">
                     <img src="images/heroimage.jpg" class="d-block w-100  h-75" alt="..." height="600px">
                     <div class=" carousel-caption1   w-100  element">
-                        
-                            <h5 class=" text1" >KREATIVITY LEAGUE
-                                2023
-                            </h5>
-                            <h4 class="text1 " style="font-family: sans-serif;">India’s Biggest
-                                League to Nurture
-                                Problem-Solving </h4>
-                            <div class="row">
-                                <div class=" col-12 mx-auto ">
-                                    <a href="register.html" class="btn btn-outline-primary w-auto  mx-auto text-white fw-bold rounded
+
+                        <h5 class=" text1">INDIAN KREATIVITY LEAGUE
+                            2023
+                        </h5>
+                        <h4 class="text1 " style="font-family: sans-serif;">India’s Biggest
+                            League to Nurture
+                            Problem-Solving </h4>
+                        <div class="row">
+                            <div class=" col-12 mx-auto ">
+                                <a href="register.html" class="btn btn-outline-primary w-auto  mx-auto text-white fw-bold rounded
                                     " type="button" style="background-color: #087C94;
                                   "> <span class="px-auto py-auto min-vw-100"> Register Now</span></a>
-                                </div>
                             </div>
-                        
+                        </div>
+
                     </div>
                 </div>
-                
+
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
                 data-bs-slide="prev">
@@ -456,23 +456,33 @@
     </div>
     </div>
     </div>
-    <!--SKILLS THAT WE FOCUSED-->
-    <div class="container-fluid">
-        <h3 class="text-center my-3 " style="color: #087C94;">Skill that we focused</h3>
-        <div class="row mb-2 mx-auto">
+    <!--Multiply buttons-->
+    <div class="container my-2">
+        <div class="button-container d-flex flex-row justify-content-center align-items-center">
+            <button class="btn btn-primary mx-2" onclick="toggleSection(1)">Button 1</button>
+            <button class="btn btn-secondary mx-2" onclick="toggleSection(2)">Button 2</button>
+            <button class="btn btn-success mx-2" onclick="toggleSection(3)">Button 3</button>
+            <button class="btn btn-danger mx-2" onclick="toggleSection(4)">Button 4</button>
+        </div>
+
+        <div class="card mt-4">
+            <div class="row">
+                <div class="col-md-3 card-body card-body5" id="section1">
+                    <h3 class="text-center my-3 " style="color: #087C94;">Skill that we focused</h3>
+        <div class="row mb-5 mx-auto">
 
             <div class="col-xxl-1 col-xl-1 col-lg-1 col-md-2 col-sm-1 mx-auto "></div>
             <div class="col-xxl-2 col-xl-2 col-lg-2 col-md-12 col-sm-12 mx-auto ">
-                <div class="card h-100 mx-auto border-danger">
-                    <img src="images/mathematics.png  " class="card-img-top" alt="...">
+                <div class="card card5 h-100 mx-auto border-danger">
+                    <img src="images/maths (1).png" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h6 class="card-text text-center fw-bold mx-auto py-2" style="color: #F80808;">Mathematics</h6>
                     </div>
                 </div>
             </div>
             <div class="col-xxl-2 col-xl-2 col-lg-2 col-md-6 col-sm-6  mx-auto ">
-                <div class="card h-100 mx-auto border-danger">
-                    <img src="images/science.png" class="card-img-top" alt="...">
+                <div class="card card5 h-100 mx-auto border-danger">
+                    <img src="images/atom (2).png" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h6 class="card-text text-center fw-bold mx-auto py-auto" style="color: #F80808;">Scientific
                             Literacy</h5>
@@ -480,25 +490,94 @@
                 </div>
             </div>
             <div class="col-xxl-2 col-xl-2 col-lg-2 col-md-6 col-sm-6 mx-auto ">
-                <div class="card h-100 mx-auto border-danger">
-                    <img src="images/creativity.png" class="card-img-top" alt="...">
+                <div class="card card5 h-100 mx-auto border-danger">
+                    <img src="images/creativity (1).png" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h6 class="card-text text-center fw-bold mx-auto py-2" style="color: #F80808;">Creativity</h6>
                     </div>
                 </div>
             </div>
             <div class="col-xxl-2 col-xl-2 col-lg-2 col-md-6 col-sm-6 mx-auto mx-auto ">
-                <div class="card h-100 mx-auto border-danger">
-                    <img src="images/programming.png" class="card-img-top" alt="...">
+                <div class="card card5 h-100 mx-auto border-danger">
+                    <img src="images/coding.png" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h6 class="card-text text-center fw-bold mx-auto py-2" style="color: #F80808;">Coding</h6>
                     </div>
                 </div>
             </div>
             <div class="col-xxl-2 col-xl-2 col-lg-2 col-md-6 col-sm-6 mx-auto ">
-                <div class="card h-100 mx-auto border-danger">
-                    <img src="images/skill.png " class="card-img-top" alt="...">
+                <div class="card card5 h-100 mx-auto border-danger">
+                    <img src="images/skill.png" class="card-img-top" alt="...">
                     <div class="card-body">
+                        <h6 class="card-text text-center fw-bold mx-auto py-2" style="color: #F80808;">Logical Thinking
+                        </h6>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xxl-1 col-xl-1 col-lg-1 col-md-2 col-sm-1 mx-auto "></div>
+        </div>
+                </div>
+                <div class="col-md-3 card-body card-body5 d-none" id="section2">
+                    <h5>Section 2</h5>
+                    <p>This is the content of Section 2.</p>
+                </div>
+                <div class="col-md-3 card-body card-body5 d-none" id="section3">
+                    <h5>Section 3</h5>
+                    <p>This is the content of Section 3.</p>
+                </div>
+                <div class="col-md-3 card-body card-body5 d-none" id="section4">
+                    <h5>Section 4</h5>
+                    <p>This is the content of Section 4.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+<br><br>
+
+<div></div>
+    <!--SKILLS THAT WE FOCUSED-->
+    <div class="container-fluid">
+        <h3 class="text-center my-3 " style="color: #087C94;">Skill that we focused</h3>
+        <div class="row mb-2 mx-auto">
+
+            <div class="col-xxl-1 col-xl-1 col-lg-1 col-md-2 col-sm-1 mx-auto "></div>
+            <div class="col-xxl-2 col-xl-2 col-lg-2 col-md-12 col-sm-12 mx-auto ">
+                <div class="card card5 h-100 mx-auto border-danger">
+                    <img src="images/maths (1).png" class="card-img-top" alt="...">
+                    <div class="card-body ">
+                        <h6 class="card-text text-center fw-bold mx-auto py-2" style="color: #F80808;">Mathematics</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xxl-2 col-xl-2 col-lg-2 col-md-6 col-sm-6  mx-auto ">
+                <div class="card card5 h-100 mx-auto border-danger">
+                    <img src="images/atom (2).png" class="card-img-top" alt="...">
+                    <div class="card-body card-body5">
+                        <h6 class="card-text text-center fw-bold mx-auto py-auto" style="color: #F80808;">Scientific
+                            Literacy</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xxl-2 col-xl-2 col-lg-2 col-md-6 col-sm-6 mx-auto ">
+                <div class="card card5 h-100 mx-auto border-danger">
+                    <img src="images/creativity (1).png" class="card-img-top" alt="...">
+                    <div class="card-body card-body5">
+                        <h6 class="card-text text-center fw-bold mx-auto py-2" style="color: #F80808;">Creativity</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xxl-2 col-xl-2 col-lg-2 col-md-6 col-sm-6 mx-auto mx-auto ">
+                <div class="card card5 h-100 mx-auto border-danger">
+                    <img src="images/coding.png" class="card-img-top" alt="...">
+                    <div class="card-body card-body5">
+                        <h6 class="card-text text-center fw-bold mx-auto py-2" style="color: #F80808;">Coding</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xxl-2 col-xl-2 col-lg-2 col-md-6 col-sm-6 mx-auto ">
+                <div class="card card5 h-100 mx-auto border-danger">
+                    <img src="images/skill.png" class="card-img-top" alt="...">
+                    <div class="card-body card-body5">
                         <h6 class="card-text text-center fw-bold mx-auto py-2" style="color: #F80808;">Logical Thinking
                         </h6>
                     </div>
@@ -911,9 +990,9 @@
                 <div class="card shadow h-100 mx-auto w-auto card3">
 
                     <img src="images/browser.png" alt="" class="w-auto h-auto mx-5 py-3">
-                    <p class="text-center fw-bold" style="color: #F80808;">Internet Browser 
+                    <p class="text-center fw-bold" style="color: #F80808;">Internet Browser
                         (Chrome, Safari, Firefox)
-                        </p>
+                    </p>
 
                 </div>
             </div>
@@ -1196,6 +1275,7 @@
     <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.js"></script>
     <script type="text/javascript" src="./javascript/script.js"></script>
+    
 
 
 
