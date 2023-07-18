@@ -88,8 +88,9 @@ var activeSection = 1; // Set the default active section
 
 // Show the default section on page load
 document.addEventListener("DOMContentLoaded", function (event) {
-    var defaultSection = document.getElementById("section" + activeSection);
+    var defaultSection = document.getElementById("section1");
     defaultSection.classList.add("show");
+    defaultSection.classList.remove("d-none");
 });
 function toggleSection(sectionNumber) {
     var selectedSection = document.getElementById("section" + sectionNumber);
@@ -108,6 +109,7 @@ function toggleSection(sectionNumber) {
     // Update the active section
     activeSection = sectionNumber;
 }
+
 
 
 
