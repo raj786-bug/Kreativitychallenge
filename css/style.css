@@ -418,7 +418,7 @@ a:hover {
 }
 
 .element {
-  padding-bottom: 50px;
+  padding-bottom: 10px;
   /* Default padding for all screen sizes */
 
 
@@ -433,12 +433,12 @@ a:hover {
   /* Responsive padding for medium devices (between 576px and 992px) */
   @media (min-width: 577px) and (max-width: 992px) {
 
-    padding-bottom: 45px;
+    padding-bottom: 100px;
   }
 
   /* Responsive padding for large devices (above 992px) */
   @media (min-width: 993px) {
-    padding-bottom: 100px;
+    padding-bottom: 280px;
 
   }
 }
@@ -454,14 +454,14 @@ a:hover {
 
 
 .text1 {
-  font-size: 10px;
+  font-size: small;
   /* Default font size for all screen sizes */
   font-family: sans-serif;
   font-weight: bold;
   color: white;
 
   @media (max-width: 280px) {
-    font-size: 10px;
+    font-size: xx-small;
     font-family: sans-serif;
     font-weight: bold;
     color: white;
@@ -469,7 +469,7 @@ a:hover {
 
   /* Responsive font size for small devices (up to 576px) */
   @media (min-width:281px) and(max-width: 356px) {
-    font-size: 10px;
+    font-size: xx-small;
     font-family: sans-serif;
     font-weight: bold;
     color: white;
@@ -477,7 +477,7 @@ a:hover {
 
   /* Responsive font size for small devices (up to 576px) */
   @media (min-width:360px) and (max-width: 390px) {
-    font-size: 12px;
+    font-size: x-small;
     font-family: sans-serif;
     font-weight: bold;
     color: white;
@@ -485,7 +485,7 @@ a:hover {
 
   /* Responsive font size for small devices (up to 576px) */
   @media (min-width:391px) and (max-width: 576px) {
-    font-size: 12px;
+    font-size: medium;
     font-family: sans-serif;
     font-weight: bold;
     color: white;
@@ -493,7 +493,7 @@ a:hover {
 
   /* Responsive font size for medium devices (between 577px and 992px) */
   @media (min-width: 577px) and (max-width: 992px) {
-    font-size: 24px;
+    font-size: large;
     font-family: sans-serif;
     font-weight: bold;
     color: white;
@@ -501,7 +501,7 @@ a:hover {
 
   /* Responsive font size for large devices (above 992px) */
   @media (min-width: 993px) {
-    font-size: 30px;
+    font-size: x-large;
     font-family: sans-serif;
     font-weight: bold;
     color: white;
