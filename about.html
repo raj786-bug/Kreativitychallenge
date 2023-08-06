@@ -10,25 +10,45 @@
     <!-- FontAwesome 4.7.0 CDN -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
         integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <style>
+        .col1-container {
+            display: table;
+            /* Make the container element behave like a table */
+            width: 100%;
+            /* Set full-width to expand the whole page */
+        }
+
+        .col1 {
+            display: table-cell;
+            /* Make elements inside the container behave like table cells */
+        }
+    </style>
 </head>
 
 <body>
 
     <!--Navbar-->
     <br>
+
     <!--Navbar-->
     <div class="container">
-        <nav class="navbar navbar-expand-lg  " style="background-color: #087C94;">
+        <nav class="navbar navbar-expand-lg navbar-light rounded-2" style="background-color:#087C94">
             <div class="container-fluid">
-                <div class="navbar-header text-center px-3">
-                    <a class="navbar-brand text-white text-decoration fw-bold" href="index.html">Kreativity League</a>
-                </div>
-                <div class="collapse navbar-collapse mx-4" id="navbarText">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link  text-white fw-bold text-decoration" aria-current="page"
-                                href="index.html">Home</a>
-                        </li>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse text-center" id="navbarTogglerDemo01">
+                    <a class=" text-white  fw-bold mx-lg-5 " href="index.html" style="text-decoration: none;">
+                        <i class="fa fa-home mx-2" aria-hidden="true"></i> <span
+                            style="color: #f88408; font-size: large;">K</span>re<span
+                            style="color: #f88408; font-size: large;">8</span>tivity League
+
+                    </a>
+                    <div class="mx-lg-3 "></div>
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 text-center">
+
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle text-white fw-bold text-decoration" href="about.html"
                                 id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown"
@@ -36,8 +56,8 @@
                                 About
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
-                                <li><a class="dropdown-item" href="www.ableducation.com">ABL Education</a></li>
-                                <li><a class="dropdown-item" href="about.html">Mission and Vission</a></li>
+                                <li><a class="dropdown-item" href="http://www.ableducation.com/">ABL Education</a></li>
+                                <li><a class="dropdown-item" href="about.html">Mission and Vision</a></li>
 
                             </ul>
                         </li>
@@ -48,33 +68,39 @@
                                 Guidelines
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
-                                <li><a class="dropdown-item" href="index.html#eligibilty">Procedure</a></li>
+                                <li><a class="dropdown-item" href="index.html#eligibilty">Rules</a></li>
                                 <li><a class="dropdown-item" href="index.html#impdates">Important Dates</a></li>
+                                <li><a class="dropdown-item" href="unleashing.html">Procedure</a></li>
 
                             </ul>
+
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link active text-white fw-bold text-decoration" aria-current="page"
+                                href="index.html#prize">Rewards</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link active text-white fw-bold text-decoration" aria-current="page"
-                                href="index.html#prize">Rewards &nbsp;</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active text-white fw-bold text-decoration" aria-current="page"
-                                href="stem.html">Nurture Skills</a>
+                                href="stem.html">Nurture
+                                Skills</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link active text-white fw-bold text-decoration" aria-current="page"
                                 href="index.html#contact">Contact us</a>
                         </li>
+                        <li class="text-center ">
+
+                        </li>
                     </ul>
-                    <div class="navbar-login mr-5">
-                        <a type="button" class="btn btn-primary mx-1" style="background-color: #FF4F00;" href="login.html">Login</a>
-                        <a type="button" class="btn btn-secondary mx-1" style="background-color: green;" href="register.html">Register</a>
-                    </div>
+                    <a class="btn btn-primary  mx-1 fw-bold" style="background-color: #FF4F00;"
+                        href="login.html">Login</a>
+                    <a class="btn btn-secondary fw-bold" style="background-color: green;"
+                        href="register.html">Register</a>
                 </div>
             </div>
         </nav>
     </div>
-
     <div class="container">
         <!--Hero Image-->
         <div id="carouselExampleInterval" class="carousel slide carousel-fade" data-bs-ride="carousel">
@@ -82,7 +108,9 @@
                 <div class="carousel-item active" data-bs-interval="5000">
                     <img src="images/heroimage.jpg" class="d-block w-100" alt="..." height="600px">
                     <div class="carousel-caption d-flex flex-column" style="padding-bottom: 200px;">
-                        <div class=" mx-auto my-4 ">
+                        <div class=" mx-auto mt-5 ">
+                            <img src="images/kreativity logo for website.png" alt="" class="back2 mt-5"
+                                style="height: 200px ; width: 250px;">
                             <h5 class="font-weight-bold display-4">ABOUT US</h5>
                         </div>
                     </div>
@@ -143,24 +171,24 @@
         <div class="row mb-0">
             <div class="col-12 ">
                 <h2 class="text-center mt-3 text-white text-uppercase">An Initiative of</h2>
-                <h5 class="text-center text-white">Chetanya Sahu - Convenor
+                <h5 class="text-center text-white">Chetanya Sahu – Director, Kreativity League and CEO, ABL Education
                 </h5>
-                <h5 class="text-center text-white">KREATIVITY League, CEO of ABL Education,
-                    Has 15+ years of experience in
-                    Activity-based Learning.</h5>
+                <h5 class="text-center text-white">Having 15 years of experience in Activity-based Learning and working
+                    with 200+ Schools</h5>
             </div>
         </div>
-        <div class="row">
+        <h4 class="text-center mt-2" style="color: white;">ACCOLADES IN THIS JOURNEY…</h4>
+        <div class="row mt-0 mb-5">
             <div id="carouselExampleFade" class="carousel slide carousel-fade " data-bs-ride="carousel">
                 <div class="carousel-inner">
-                    <div class="carousel-item active">
+                    <div class="carousel-item active" data-bs-interval="1000">
                         <div class="container">
                             <div class="row">
-                                <div class="card mb-3 my-3 w-100">
+                                <div class="card mb-3 my-5 w-100">
                                     <div class="row g-2">
                                         <div class="col-md-4 ">
-                                            <img class="card-img-left img-fluid rounded mx-auto d-block my-3  shadow-lg img1"
-                                                src="images/appreciated.png" />
+                                            <img class="card-img-left img-fluid rounded mx-auto d-block my-3  shadow-lg "
+                                                src="images/appreciated.png" / style="width: 200px; height: 200px;">
 
                                         </div>
                                         <div class="col-md-8 mt-5">
@@ -169,9 +197,9 @@
                                                     <blockquote class="blockquote bg">
                                                         <p class="pb-3">
 
-                                                            <span class="lead font-italic text-dark h5-lg">Appreciated
-                                                                by renowned scientist & Former President of India Dr.
-                                                                APJ Abdul Kalam.
+                                                            <span class="lead font-italic text-dark h5-lg">
+                                                                Interviewed, on the TV show “Runway to Success”
+                                                                on ET NOW
                                                             </span>
 
                                                         </p>
@@ -190,11 +218,11 @@
                     <div class="carousel-item">
                         <div class="container">
                             <div class="row">
-                                <div class="card mb-3 my-5 w-100">
+                                <div class="card mb-3 my-5 w-100" data-bs-interval="1000">
                                     <div class="row g-2">
                                         <div class="col-md-4 ">
-                                            <img class="card-img-left img-fluid rounded mx-auto d-block my-3  shadow-lg img1"
-                                                src="images/selected.png" />
+                                            <img class="card-img-left img-fluid rounded mx-auto d-block my-3  shadow-lg "
+                                                src="images/selected.png" / style="width: 200px; height: 200px;">
 
                                         </div>
                                         <div class="col-md-8 mt-5">
@@ -204,9 +232,9 @@
                                                         <p class="pb-3">
 
                                                             <span class="lead font-italic text-dark h5-lg">
-                                                                Selected among the top 27 Start-up Entrepreneurs and
-                                                                interviewed, on the TV show “Runway to Success”
-                                                                telecasted on ET NOW
+                                                                Appreciated by Former President of
+                                                                India Dr. APJ Abdul Kalam.
+
                                                             </span>
 
                                                         </p>
@@ -224,11 +252,11 @@
                     <div class="carousel-item">
                         <div class="container">
                             <div class="row">
-                                <div class="card mb-3 my-5 w-100">
+                                <div class="card mb-3 my-5 w-100" data-bs-interval="1000">
                                     <div class="row g-2">
                                         <div class="col-md-4 ">
-                                            <img class="card-img-left img-fluid rounded mx-auto d-block my-3  shadow-lg img1"
-                                                src="images/Presented.png" />
+                                            <img class="card-img-left img-fluid rounded mx-auto d-block my-3  shadow-lg "
+                                                src="images/Presented.png" / style="width: 200px; height: 200px;">
 
                                         </div>
                                         <div class="col-md-8 mt-5">
@@ -238,8 +266,9 @@
                                                         <p class="pb-3">
 
                                                             <span class="lead font-italic text-dark h5-lg">
-                                                                Presented the STEM Program to the Former Vice President
-                                                                of India Shri M. Venkaiah Naidu
+                                                                Sharing about STEM Education
+                                                                with Former Vice President Shri
+                                                                M. Venkaiah Naidu
                                                             </span>
 
                                                         </p>
@@ -256,18 +285,128 @@
                     </div>
 
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade"
+                <button class="carousel-control-prev mr-3" type="button" data-bs-target="#carouselExampleFade"
                     data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="carousel-control-prev-icon rounded-circle  bg-danger my-auto"
+                        aria-hidden="true"></span>
                     <span class="visually-hidden">Previous</span>
                 </button>
                 <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade"
                     data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="carousel-control-next-icon rounded-circle bg-danger" aria-hidden="true"></span>
                     <span class="visually-hidden">Next</span>
                 </button>
             </div>
         </div>
+    </div>
+    <div class="container">
+        <div class="row ">
+            <div class="col-12 ">
+                <h2 class="text-center mt-1 text-uppercase" style="color: #087C94;">An Initiative of</h2>
+                <h5 class="text-center" style="color: #f88408;">Techfest – Asia’s Biggest Technical Festival for students visiting globally
+                </h5>
+                <h5 class="text-center mb-2" style="color:#f88408;">IIT Bombay – Science student’s dream to get there will manifest after visiting the
+                    beautiful lush green campus</h5>
+            </div>
+        </div>
+        <div class="row g-1">
+            <div class="col-lg-4 order-1">
+                <div class="card w-100 h-100 shadow rounded-2">
+                    <img src="images/studentworkshop.png" alt="" style="height: 210px;">
+                    <div class="card-body text-center" >
+                        <p class="h6 overflow-hidden">Student Workshop</p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-lg-4 order-3">
+                <div class="card w-100 h-100 shadow rounded-2">
+                    <img src="images/iit bombay techfest.png" alt="" style="height: 210px;">
+                    <div class="card-body text-center" >
+                        <p class="h6 overflow-hidden">IIT Bombay Campus, Serving since 1958</p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-lg-4 order-2">
+                <div class="card w-100 h-100 shadow rounded-2 ">
+                    <img src="images/techfest festival.png" alt="" style="height: 210px;">
+                    <div class="card-body text-center" >
+                        <p class="h6 overflow-hidden">Techfest- 1,00,000+ students
+                            visiting 3 days technical festival
+                            every year</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+    <div class="row mt-4  mx-auto my-1">
+
+        <div class="row">
+            <div class="col-md-3 mx-5 my-2 card card-body card-body5 w-75" id="section5">
+                <div class="text-center" style="color:#087C94;">
+                    <h3>For Students</h3>
+                </div>
+                <!--For Students-->
+                <ul>
+                    <li> Exposure at national level</li>
+                    <li> Unleash Creativity & Olympiad</li>
+                    <li> Participation Certificate</li>
+                    <li> Trophies for winners</li>
+                    <li> Winners will visit ISRO</li>
+                    <li> Scholarships for STEM Program</li>
+                </ul>
+            </div>
+            <!--For parents-->
+            <div class="col-md-3 mx-5  my-2 card card-body card-body5 w-75 d-none" id="section6">
+                <div class="text-center" style="color:#087C94;">
+                    <h3>For Parents</h3>
+                </div>
+                <ul>
+                    <li> A Powerful parenting session with an Expert.
+                    </li>
+
+                </ul>
+
+
+            </div>
+            <!--For Teachers-->
+            <div class="col-md-3 mx-5  my-2 card card-body card-body5 w-75 d-none" id="section7">
+                <div class="text-center" style="color:#087C94;">
+                    <h3>For Teachers</h3>
+                </div>
+                <ul>
+                    <li> Gift Hamper</li>
+                    <li> Appreciation Certificate</li>
+
+                    <li>Experiential Learning Workshop</li>
+                    <li>Teacher coordinator with wins
+                        will visit ISRO</li>
+                </ul>
+            </div>
+            <!--For Schools-->
+            <div class="col-md-3 mx-5  my-2 card card-body card-body5 w-75 d-none" id="section8">
+                <div class="text-center" style="color:#087C94;">
+                    <h3>For Schools</h3>
+                </div>
+                <ul>
+                    <li> Visibility & Branding PAN India</li>
+                    <li> Partner School Certificate</li>
+                    <li> Trophy for the Winner school</li>
+                    <li> Media Coverage</li>
+
+                    <li> Zonal Winners will get the
+                        opportunity to visit IITB</li>
+                    <li>Finale Winners will get the
+                        opportunity to visit ISRO</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
     </div>
     <!--Mission and Vision-->
     <div class="container">
@@ -278,40 +417,38 @@
                 <div class="row">
                     <!-- START THE FEATURETTES -->
                     <div class="row featurette">
-                        <div class="col-md-1"></div>
-                        <div class="col-md-6 order-2 mx-2">
+
+                        <div class="col-md-5 order-2 mx-4">
                             <h2 class="featurette-heading fw-normal lh-1 mt-5 text-dark">Our Vision </h2>
                             <p class="lead text-dark">
-                                Unleashing the hidden skills helps kids to identify the real gap and nurture that
-                                specific skill in a more result-oriented form.
+                                Unleash the Skills of School students and nurture the skill gaps at an early age for
+                                better success in academics, career, and everyday life.
                             </p>
                         </div>
-                        <div class="col-md-4 order-1">
-                            <img src="images/vision.png" alt="" class="w-75 h-100">
+                        <div class="col-md-4 order-1 text-end ">
+                            <img src="images/opportunity.png" alt="" class="w-75 h-75">
                         </div>
-
+                        <div class="col-md-1"></div>
                     </div>
 
 
 
                 </div>
                 <!-- Three columns of text below the carousel -->
-                <div class="row my-2 " style="background-color: #FF4F00;">
+                <div class="row my-2 ">
                     <!-- START THE FEATURETTES -->
                     <div class="row featurette ">
-                        <div class="col-md-1"></div>
-                        <div class="col-md-6 order-1">
-                            <h2 class="featurette-heading fw-normal lh-1 mt-5 text-white">Our Mission </h2>
-                            <p class="lead text-white">The goal is to provide a platform for the kids to Showcase their creativity
-                                at a Zonal & National level. <br>
-                                Kids develop an interest in STEM to enhance their skills with fun and pursue further
-                                education and careers with more interest
+
+                        <div class="col-md-6 order-2">
+                            <h2 class="featurette-heading fw-normal lh-1 mt-5 text-dark">Our Mission </h2>
+                            <p class="lead text-dark">The goal is to provide a platform for the kids to Showcase their
+                                creativity at a National & International level
                             </p>
                         </div>
-                        <div class="col-md-4 order-2 mx-2">
-                            <img src="images/target.png" alt="" class="w-75 h-100">
+                        <div class="col-md-4 order-1 mx-2 text-end">
+                            <img src="images/leadership.png" alt="" class="w-75 h-75 rounded-3 border-danger">
                         </div>
-
+                        <div class="col-md-1"></div>
                     </div>
                 </div>
             </div>
@@ -334,7 +471,10 @@
                                                 style="text-decoration: underline;color: white;">About us</a></li>
 
                                         <li class="list-group-item text-white bg-dark"><a href="stem.html"
-                                                style="text-decoration: underline;color: white;">Problem-Solving</a>
+                                                style="text-decoration: underline;color: white;">Nurture Skills</a>
+                                        </li>
+                                        <li class="list-group-item text-white bg-dark"><a href="privacy.html"
+                                                style="text-decoration: underline;color: white;">Privacy Policies</a>
                                         </li>
 
                                     </ul>
@@ -355,9 +495,10 @@
                                 <!-- Grid column -->
                                 <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
                                     <h6 class="text-uppercase mb-4 font-weight-bold">Contact</h6>
-                                    <p><i class="fas fa-home mr-3"></i> G-233, Ground Floor, Sector 63, Noida - 201301,
+                                    <p><i class="fas fa-home mr-3"></i> G-233, Ground Floor, Sector 63, Noida -
+                                        201301,
                                         Uttar Pradesh</p>
-                                    <p><i class="fas fa-envelope mr-3"></i>&nbsp;info@KreativityLeague.in</p>
+                                    <p><i class="fas fa-envelope mr-3"></i>&nbsp;info@KreativityLeague.com</p>
                                     <p><i class="fas fa-phone mr-3"></i> 9211786062
                                     </p>
 
@@ -370,23 +511,27 @@
 
                                     <!-- Facebook -->
                                     <div>
-                                    <a class="btn btn-primary btn-floating m-2" style="background-color: #3b5998"
-                                        href="#!" role="button"><i class="fab fa-facebook-f"></i></a>
-                                    <!-- youtube -->
-                                    <a class="btn btn-primary btn-floating m-2" style="background-color: #e63922"
-                                        href="#!" role="button"><i class="fab fa-youtube"></i></a>
-                                    
-                                    <!-- Instagram -->
-                                    <a class="btn btn-primary btn-floating m-2" style="background-color: #ac2bac"
-                                        href="#!" role="button"><i class="fab fa-instagram"></i></a>
+                                        <a class="btn btn-primary btn-floating m-2" style="background-color: #3b5998"
+                                            href="https://www.facebook.com/kreativityLeague" role="button"><i
+                                                class="fab fa-facebook-f"></i></a>
+                                        <!-- youtube -->
+                                        <a class="btn btn-primary btn-floating m-2" style="background-color: #e63922"
+                                            href="https://www.youtube.com/ableducation" role="button"><i
+                                                class="fab fa-youtube"></i></a>
 
-                                    <!-- Linkedin -->
-                                    <a class="btn btn-primary btn-floating m-2" style="background-color: #0082ca"
-                                        href="#!" role="button"><i class="fab fa-linkedin-in"></i></a>
+                                        <!-- Instagram -->
+                                        <a class="btn btn-primary btn-floating m-2" style="background-color: #ac2bac"
+                                            href="https://www.instagram.com/abl_education/" role="button"><i
+                                                class="fab fa-instagram"></i></a>
 
+                                        <!-- Linkedin -->
+                                        <a class="btn btn-primary btn-floating m-2" style="background-color: #0082ca"
+                                            href="https://www.linkedin.com/company/kreativity-league/" role="button"><i
+                                                class="fab fa-linkedin-in"></i></a>
+
+                                    </div>
                                 </div>
-                            </div>
-                            <!--Grid row-->
+                                <!--Grid row-->
                         </section>
                         <!-- Section: Links -->
                     </div>

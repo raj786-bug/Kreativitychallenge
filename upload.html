@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Excel Upload Form</title>
+</head>
+<body>
+    <form id="excelForm" enctype="multipart/form-data">
+        <input type="file" id="fileInput" accept=".xlsx, .xls">
+        <input type="password" id="passwordInput" placeholder="Decryption Password"> <!-- Password input element -->
+        <button type="button" onclick="uploadExcel()">Upload Excel</button>
+    </form>
+
+    <script>
+       function uploadExcel() {
+    const fileInput = document.getElementById('fileInput');
+    const passwordInput = document.getElementById('passwordInput').value; // Assuming you have an input for the password
+    console.log(passwordInput);
+    const file = fileInput.files[0];
+    const password = passwordInput.value;
+
+    if (!file) {
+        alert('Please select an Excel file.');
+        return;
+    }
+
+    const formData = new FormData();
+    formData.append('file', file);
+    formData.append('password', password); // Add the password to the FormData
+
+    fetch('http://localhost:8080/import-decrypted-excel', {
+        method: 'POST',
+        body: formData
+    },{ mode: 'no-cors'})
+    .then(response => response.json())
+    .then(data => {
+        if (data.success) {
+            alert('Excel data imported successfully.');
+        } else {
+            alert('Failed to import Excel data.');
+        }
+    })
+    .catch(error => {
+        console.error('Error:', error);
+        alert('An error occurred during the upload process.');
+    });
+}
+
+    </script>
+</body>
+</html>

@@ -15,68 +15,103 @@
     .card1:hover {
         background-color:  lightblue ;
     }
+    .card {
+      flex-direction: row;
+      align-items: center;
+      font-weight: bold;
+    }
+
+    .card img {
+
+      border-top-right-radius: 0;
+
+    }
+    @media only screen and (max-width: 576px) {
+      
+
+      .card-body {
+        padding: 0.5em 1.2em;
+      }
+
+      .card-body .card-text {
+        margin: 0;
+        font-size: xx-small;
+      }
+
+      .card img {
+        width: 40%;
+      }
+    }
+
+    @media only screen and (max-width: 768px) {
+     
+
+      .card-body {
+        padding: 0.5em 1.2em;
+      }
+
+      .card-body .card-text {
+        margin: 0;
+        font-size: x-small;
+      }
+
+      .card img {
+        width: 40%;
+      }
+    }
+
+    @media only screen and (max-width: 1200px) {
+      .card img {
+        width: 40%;
+      }
+    }
 </style>
 
-<body>
-    <div class="bg">
-        <div class="container mx-auto">
-            <div class="row mx-auto">
-                <div class="col-md-3"></div>
-                <div class="col-md-6 ">
-                    <div class="card w-75 h-100 mx-auto rounded">
-                        <div class="row text-center">
-                            <img src="images/logo_kreativity_league-removebg-preview.png"
-                                class="rounded-circle  mx-auto" alt="" style="width: 200px; height: 250px;">
+<body class="bg">
+   
+        
+        <div class="container ">
+            <div class="row  ">
+                
+                <div class="col-sm-12 my-2 ">
+                    <div class="border bg-white my-2 w-50  h-100  rounded text-start mx-auto shadow">
+                        <div class="text-center my-1">
+                            <img src="images/KLogo-removebg-preview.png" alt="" class="w-25 h-25">
                         </div>
-                        <div class="row text-center mb-5">
-                            <div class="col-md-1 "></div>
-                            <div class="col-md-10">
-                                <a href="studentform.html" style="text-decoration: none; color: black;">
-                                    <div class="card flex-row mx-auto " type="button">
-                                        <div class="rounded-circle border-primary w-25 h-25">
-                                            <img class="  card-img-left example-card-img-responsive rounded shadow h-100 py-4 px-2 "
-                                                src="images/student.png"
-                                                style="width: 80px; height: 100px; object-fit: cover;" />
-
-                                        </div>
-                                        <div class="card-body card1 ">
-                                            <h4 class="text-start h5 h4-sm pt-2 fw-bold mx-4">STUDENTS</h4>
-                                            <p class="pb-1 text-start mx-4" style="color:gray;">Registration</p>
-
-                                        </div>
-                                    </div>
-                                </a>
+                        <a href="studentform.html" style="text-decoration: none; color: black;">
+                        <div class="card card1 w-75 mx-auto my-3 " style="width: 20rem;">
+                            <img src="images/student.png" class="card-img-top w-25 h-100 rounded shadow my-2 px-2" alt="..." style="object-fit: contain;">
+                            <div class="card-body ">
+                              <h5 class="card-text fw-bold">Student</h5>
+                              <p class="card-text">Registration</p>
+                              
                             </div>
-                            <div class="col-md-1"></div>
-                        </div>
-                        <div class="row text-center mb-5" type="button disabled">
-                            <div class="col-md-1"></div>
-                            <div class="col-md-10">
-                                <a href="#" style="text-decoration: none; color: black;">
-                                <div class="card flex-row mx-auto">
-                                    <div class="rounded-circle border-primary w-25 h-25">
-                                        <img class="card-img-left example-card-img-responsive  py-4 px-2 rounded shadow h-100"
-                                            src="images/school (4).png"
-                                            style="width: 80px; height: 100px; object-fit: cover;" />
-                                    </div>
-                                    <div class="card-body card1">
-                                        <h4 class="text-start h5 h4-sm pt-2 fw-bold mx-4">SCHOOL</h4>
-                                        <p class="pb-1 text-start mx-4" style="color:gray;">Registration</p>
 
-                                    </div>
-                                </div>
-                                </a>
+                          </div>
+                          </a>
+                          <a href="Teacher.html" style="text-decoration: none; color: black;">
+                          <div class="card card1 w-75 mx-auto  mb-2" style="width: 20rem;">
+                            <img src="images/school (4).png" class="card-img-top w-25 h-100 rounded shadow my-2 px-2" alt="..." style="object-fit: contain;">
+                            <div class="card-body ">
+                              <h5 class="card-text fw-bold">School</h5>
+                              <p class="card-text ">Registration</p>
+                              
                             </div>
-                            <div class="col-md-1"></div>
+                          </div>
+                          </a>
                         </div>
+                    
                     </div>
                 </div>
-                <div class="col-md-3"></div>
+               
             </div>
-            <!--For Students-->
+            
+        
 
         </div>
-    </div>
+        
+
+        
 </body>
 
 </html>

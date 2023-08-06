@@ -19,6 +19,44 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
         integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
     <link rel="stylesheet" href="css/navbar.css">
+    <style>
+        .hero-image {
+            background-image: url('heroimage.jpg');
+            background-size: cover;
+            background-position: center;
+            width: 100%;
+            height: 700px;
+            /* Adjust the height as needed */
+            position: relative;
+            z-index: -1;
+        }
+
+        .back {
+            z-index: 2;
+        }
+
+        .back2 {
+            z-index: 1;
+        }
+
+        .hero-text {
+            text-align: center;
+            position: absolute;
+            top: 40%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: #ffffff;
+        }
+
+        .hero-text h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .hero-text p {
+            font-size: 1.5rem;
+        }
+    </style>
 </head>
 
 <body>
@@ -53,14 +91,15 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse text-center" id="navbarTogglerDemo01">
-                    <a class=" text-white  fw-bold mx-xl-5" href="index.html" style="text-decoration: none;">
-                        Indian Kreativity League
+                    <a class=" text-white  fw-bold mx-lg-5 " href="index.html" style="text-decoration: none;">
+                        <i class="fa fa-home mx-2" aria-hidden="true"></i> <span
+                            style="color: #f88408; font-size: large;">K</span>re<span
+                            style="color: #f88408; font-size: large;">8</span>tivity League
+
                     </a>
+                    <div class="mx-lg-3 "></div>
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0 text-center">
-                        <li class="nav-item">
-                            <a class="nav-link  text-white fw-bold text-decoration" aria-current="page"
-                                href="index.html">Home</a>
-                        </li>
+
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle text-white fw-bold text-decoration" href="about.html"
                                 id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown"
@@ -68,7 +107,7 @@
                                 About
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
-                                <li><a class="dropdown-item" href="www.ableducation.com">ABL Education</a></li>
+                                <li><a class="dropdown-item" href="http://www.ableducation.com/">ABL Education</a></li>
                                 <li><a class="dropdown-item" href="about.html">Mission and Vision</a></li>
 
                             </ul>
@@ -80,11 +119,14 @@
                                 Guidelines
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
-                                <li><a class="dropdown-item" href="index.html#eligibilty">Procedure</a></li>
+                                <li><a class="dropdown-item" href="index.html#eligibilty">Rules</a></li>
                                 <li><a class="dropdown-item" href="index.html#impdates">Important Dates</a></li>
+                                <li><a class="dropdown-item" href="unleashing.html">Procedure</a></li>
 
                             </ul>
+
                         </li>
+
                         <li class="nav-item">
                             <a class="nav-link active text-white fw-bold text-decoration" aria-current="page"
                                 href="index.html#prize">Rewards</a>
@@ -102,8 +144,10 @@
 
                         </li>
                     </ul>
-                    <a class="btn btn-primary  mx-1" style="background-color: #FF4F00;" href="login.html">Login</a>
-                    <a class="btn btn-secondary " style="background-color: green;" href="register.html">Register</a>
+                    <a class="btn btn-primary  mx-1 fw-bold" style="background-color: #FF4F00;"
+                        href="login.html">Login</a>
+                    <a class="btn btn-secondary fw-bold" style="background-color: green;"
+                        href="register.html">Register</a>
                 </div>
             </div>
         </nav>
@@ -149,30 +193,33 @@
 -->
     <div class="container">
         <div class="hero-image">
-            <div class="hero-text w-75 mb-6 " style="height: 100%;">
-                <img src="images/logo_kreativity_league-removebg-preview.png" alt="" style="height: 30% ; width: 20%;">
-                <h3 class="text-white fw-bold">India’s Biggest League to Nurture
-                    Problem-Solving Skill</h3>
-                <hr class="text-danger">
-                <h3 class=" text-white fw-bold">Felicitation Partner</h3>
+            <div class="hero-text w-75 mb-5 ">
+                <div class="h-100">
+                    <img src="images/kreativity logo for website.png" alt="" class="back2"
+                        style="max-height: 50% ; max-width: 30%; min-height: 20%; min-width: 20%;">
+                    <h3 class="text-white fw-bold">India’s Biggest League to Nurture Creativity & Problem-Solving
+                        Skills.</h3>
 
-                <div class="row w-auto element">
-                    <div class="col-3"></div>
-                    <div class="col-4 bg-white  rounded-3 w-25 mx-2">
-                        <img src="images/isro.png" alt="" height="100px" width="100px" class="img-fluid mt-2">
-                        <p class="fw-bold text-success mt-2 mx-auto w-auto overflow-hidden">ISRO </p>
-                    </div>
-                    <div class="col-4 bg-white  rounded-3 w-25 mx-2">
-                        <img src="images/iit delhi.png" alt="" height="100px" width="100px" class="img-fluid mt-2">
-                        <p class="fw-bold text-success mt-2 mx-auto w-auto overflow-hidden">IIT Delhi</p>
-                    </div>
-                    <div class="col-3"></div>
+
                 </div>
-
             </div>
         </div>
     </div>
     <!-- Hero -->
+    <!--Associated Partners-->
+
+    <h3 class="text-center my-4" style="color: #087C94;">In Association with</h3>
+    <div class="container">
+        <section class="customer-logos slider">
+            <div class="slide"><a href="#"><img src="images/techfest_0.jpg" width="200px" height="100px"></a></div>
+            <div class="slide"><a href="#"><img src="images/isro.png" width="100px" height="150px"></a></div>
+            <div class="slide my-3"><a href="#"><img src="images/abl logo.jpeg"></a></div>
+            <div class="slide my-4"><a href="#"><img src="images/mechanzo.png" width="100px" height="50px"></a></div>
+
+
+        </section>
+    </div>
+
 
     <!-- Hero -->
     <!--Announcements-->
@@ -180,14 +227,12 @@
         <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <h1 class="text-center text-white py-2">Important Announcements</h1>
+                    <h1 class="text-center text-white py-2">Registration is Open Now</h1>
                 </div>
                 <div class="carousel-item">
-                    <h1 class="text-center text-white py-2">Important Announcements</h1>
+                    <h1 class="text-center text-white py-2">Unleash Your Creativity</h1>
                 </div>
-                <div class="carousel-item">
-                    <h1 class="text-center text-white py-2">Important Announcements</h1>
-                </div>
+
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
                 data-bs-slide="prev">
@@ -233,7 +278,8 @@
     <!--Problem Solving Mindsets-->
     <div class="container  py-5 h-75" style="background-image: url(images/web\ img\ problem\ solving.jpg);">
         <div class="card py-5 p-5 mx-auto shadow-lg  opacity-50  h-75" style="color: #34302e;">
-            <h3 class="text-body-emphasis text-center" style="color: #087C94;">What is Problem-Solving Mindset?</h3>
+            <h3 class="text-body-emphasis text-center fw-bold" style="color: #087C94;">What is Problem-Solving Mindset?
+            </h3>
             <hr>
             <p class="col-lg-8 mx-auto lead text-center">
                 A <span style="color: #F80808;">Problem-Solving</span> mindset involves
@@ -247,8 +293,8 @@
             </p>
             <hr>
             <div class="row">
-                <h3 class="text-center lead zoom">Are we creating a
-                    <span style="color: #087C94;"> Problem-Solving Mindset</span>
+                <h3 class="text-center lead zoom">Are we nurturing <span style="color:#f88408;">Creativity</span>
+                    & <span style="color: #f88408;"> Problem-Solving Mindsets </span>
                     in our Students?
                 </h3>
                 <a type="button" class="btn btn-lg btn-success font-weight-bold w-auto mx-auto zoom"
@@ -266,19 +312,22 @@
                 </div>
                 <div class="card flex-row mx-auto my-4  overflow-hidden">
                     <img class="card-img-left example-card-img-responsive w-25 h-25 img-fluid mx-auto my-auto"
-                        src="images/logo_kreativity_league-removebg-preview.png" />
+                        src="images/KLogo-removebg-preview.png" />
                     <div class="card-body text  my-auto">
-                        <h3 class="card-title h5 fw-bold " style="color: #087C94;">KREATIVITY LEAGUE </h3>
-                        <p class="card-text">This is an opportunity for Students
-                            to showcase their
-                            <span class="fw-bold" style="color: #F80808;">Problem-Solving Skills &
-                                Creativity</span> at a National Level
-                            Platform.
+                        <h3 class="card-title h5 fw-bold " style="color: #087C94;"><span
+                                style="color: #f88408;">K</span>rea<span style="color: #f88408;">8</span>tivity League
+                        </h3>
+                        <p class="card-text">An opportunity for School
+                            students Not only to Compete at a
+                            National-Level platform.
+                            But also get Mentoring to Nurture their Creativity & Problem-Solving Skills.
                         </p>
                         <a href="register.html" class="btn btn-outline-primary w-auto mx-auto text-white fw-bold"
                             type="button" style="background-color: #087C94;
                           ">Join Us</a>
                     </div>
+                    <img class="card-img-left example-card-img-responsive w-25 h-25 img-fluid mx-auto my-auto"
+                        src="images/ideate-removebg-preview (1).png" />
                 </div>
 
             </div>
@@ -296,19 +345,20 @@
                                 <img src="images/testimonial (1).png" alt="" class="w-25 h-25 mx-5">
                             </div>
                             <div class="card-body text-center">
-                                <a href="#eligibilty" class="btn btn-danger w-100"
-                                    style="background-color: #087C94;">Procedure</a>
+                                <a href="#eligibilty" class="btn btn-danger w-100" style="background-color: #087C94;"
+                                    d="index.html#eligibilty">Competition
+                                    Details </a>
                             </div>
                         </div>
                     </div>
                     <div class="col-sm-6 h-100">
                         <div class="card h-100 w-100 shadow  bg-white rounded card2">
                             <div class="text-center mt-2">
-                                <img src="images/testing.png" alt="" class="w-25 h-25 mx-5">
+                                <img src="images/testing.png" alt="" class="w-25 h- mx-5">
                             </div>
                             <div class="card-body text-center">
                                 <a href="register.html" type="button" class="btn btn-primary w-100"
-                                    style="background-color:  #FF4F00;">Mock Test</a>
+                                    style="background-color:  #FF4F00;">Mock Test (Round 1)</a>
                             </div>
                         </div>
                     </div>
@@ -317,11 +367,10 @@
                     <div class="col-sm-6 h-100">
                         <div class="card h-100 w-100 shadow  bg-white rounded card2">
                             <div class="text-center mt-2">
-                                <img src="images/next-level.png" alt="" class="w-25 h-25 mx-5">
+                                <img src="images/trophy (2).png" alt="" class="w-25 h-25 mx-5">
                             </div>
                             <div class="card-body text-center">
-                                <a href="#stages" class="btn  w-100 text-white"
-                                    style="background-color: orange;">Competition Format
+                                <a href="#prize" class="btn  w-100 text-white" style="background-color: orange;">Rewards
                                 </a>
                             </div>
                         </div>
@@ -344,10 +393,10 @@
 
                     <div class="card w-100 h-100 py-3 shadow   bg-white rounded card2">
                         <div class="text-center mt-4 px-auto">
-                            <img src="images/trophy (2).png" alt="" class="w-25 h-25 mx-5 pt-4">
+                            <img src="images/registration.png" alt="" class="w-25 h-25 mx-5 pt-4">
                         </div>
                         <div class="card-body text-center ">
-                            <a href="prize" class="btn btn-primary w-100 bg-danger">Rewards</a>
+                            <a href="unleashing.html" class="btn btn-primary w-100 bg-danger">Unleashing Process</a>
 
                         </div>
                         <div class="pt-2">
@@ -364,7 +413,7 @@
     <div class="container-fluid  rounded">
         <div class="container" style="background-color: #FF4F00;">
             <div class="row ">
-                <h3 class="text-white text-center mt-4">Global Views on Nuturing Skills</h3>
+                <h3 class="text-white text-center mt-4">Global Views on Nurturing Skills</h3>
                 <div class="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 mb-5">
                     <div id="carouselExampleFade" class="carousel slide carousel-fade " data-bs-ride="carousel">
                         <div class="carousel-inner">
@@ -435,9 +484,10 @@
                                                                         class="fas fa-quote-left fa-xs text-primary h5-lg"></i>
                                                                     <span
                                                                         class="lead font-italic text-dark h5-lg">Leadership
-                                                                        tomorrow depends on how we educate our students
-                                                                        today—especially in science, technology,
-                                                                        engineering, and math.</span>
+                                                                        tomorrow depends on how we make our students
+                                                                        problems solvers today—especially through
+                                                                        science, technology, engineering, and
+                                                                        math..</span>
                                                                     <i
                                                                         class="fas fa-quote-right fa-xs text-primary"></i>
                                                                 </p>
@@ -479,24 +529,67 @@
     </div>
     <!--Multiply buttons-->
     <div class="container my-2 ">
-        <div class="row w-auto ">
-            <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-6 col-sm-12 my-1">
-                <button class="btn btn-primary mx-1 fw-bold flex-fill w-100 h-100" onclick="toggleSection(1)">Skills
-                    Focused</button>
-            </div>
-            <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-6 col-sm-12 my-1">
-                <button class="btn btn-secondary mx-1 fw-bold flex-fill w-100 h-100" id="stages"
-                    onclick="toggleSection(2)" style="background-color: orange;">Competition Format</button>
-            </div>
-            <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-6 col-sm-12 my-1">
-                <button class="btn btn-success mx-1 fw-bold flex-fill w-100 h-100" id="eligibilty"
-                    onclick="toggleSection(3)" style="background-color:  #087C94;">Procedure</button>
-            </div>
-            <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-6 col-sm-12 my-1">
-                <button class="btn btn-danger mx-1 fw-bold flex-fill w-100 h-100"
-                    onclick="toggleSection(4)">Infrastructure Required</button>
-            </div>
+        <div class="row mx-auto">
+            <h3 class="text-center mb-3 " style="color: #087C94;" id="eligibilty">Competition Details</h3>
+            <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-6 col-sm-12 my-1 order-1 mb-3">
+                <div class="card text-center mx-auto">
+                    <img src="images/skill (2).png" class="card-img-top pt-4 mx-auto w-50 h-50 rounded-2 "
+                        alt="Card Image">
+                    <div class="card-body">
 
+                        <div class="center-button">
+                            <button class="btn btn-primary mx-1 fw-bold flex-fill w-100 h-100"
+                                onclick="toggleSection(1)">Skill Focused</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-6 col-sm-12 my-1 order-2 mb-3">
+                <div class="card text-center mx-auto">
+                    <img src="images/competition (1).png" class="card-img-top pt-4 mx-auto w-50 h-50 rounded-2 "
+                        alt="Card Image">
+                    <div class="card-body">
+
+                        <div class="center-button">
+                            <button class="btn btn-secondary mx-1 fw-bold flex-fill w-100 h-100"
+                                onclick="toggleSection(2)" style="background-color: orange;">Competition Format</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-6 col-sm-12 my-1 order-3 mb-3">
+                <div class="card text-center mx-auto">
+                    <img src="images/planning.png" class="card-img-top pt-4 mx-auto w-50 h-50 rounded-2 "
+                        alt="Card Image">
+                    <div class="card-body">
+
+                        <div class="center-button">
+                            <button class="btn btn-success mx-1 fw-bold flex-fill w-100 h-100"
+                                onclick="toggleSection(3)" style="background-color: #087C94;">Rules</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-6 col-sm-12 my-1 order-4 mb-3">
+                <div class="card text-center mx-auto">
+                    <img src="images/cyber-security.png" class="card-img-top pt-4 mx-auto w-50 h-50 rounded-2 "
+                        alt="Card Image">
+                    <div class="card-body">
+
+                        <div class="center-button">
+                            <button class="btn btn-danger  h6 mx-1 fw-bold flex-fill w-100 h-100"
+                                onclick="toggleSection(4)">Infrastructure
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="row w-auto ">
             <div class="card mt-4 w-100 mx-2">
 
                 <div class="row">
@@ -517,7 +610,8 @@
                                                     data-dismiss="modal">&times;</button>
                                             </div>
                                             <div class="modal-body">
-                                                <p>Mathematics skills refer to the abilities and knowledge required to
+                                                <p>Mathematics skills refer to the abilities and knowledge required
+                                                    to
                                                     understand and work with mathematical concepts and solve
                                                     mathematical problems..</p>
                                             </div>
@@ -551,7 +645,8 @@
                                             </div>
                                             <div class="modal-body">
                                                 <p>Scientific literacy skills refer to the ability to understand,
-                                                    interpret, and critically evaluate scientific information, concepts,
+                                                    interpret, and critically evaluate scientific information,
+                                                    concepts,
                                                     and processes. .</p>
                                             </div>
                                             <div class="modal-footer">
@@ -614,8 +709,10 @@
                                                     data-dismiss="modal">&times;</button>
                                             </div>
                                             <div class="modal-body">
-                                                <p>Coding, in short, refers to the process of creating computer programs
-                                                    or software by writing instructions in a programming language.</p>
+                                                <p>Coding, in short, refers to the process of creating computer
+                                                    programs
+                                                    or software by writing instructions in a programming language.
+                                                </p>
                                             </div>
                                             <div class="modal-footer">
                                                 <button type="button" class="btn btn-secondary"
@@ -645,8 +742,10 @@
                                                     data-dismiss="modal">&times;</button>
                                             </div>
                                             <div class="modal-body">
-                                                <p>Coding, in short, refers to the process of creating computer programs
-                                                    or software by writing instructions in a programming language.</p>
+                                                <p>Coding, in short, refers to the process of creating computer
+                                                    programs
+                                                    or software by writing instructions in a programming language.
+                                                </p>
                                             </div>
                                             <div class="modal-footer">
                                                 <button type="button" class="btn btn-secondary"
@@ -676,9 +775,8 @@
                                     </div>
                                 </div>
                                 <div class="card card5 h-100 mx-auto border-danger card2">
-                                    <img src="images/brain.png"
-                                        class="card-img-top rounded-circle  mx-auto mt-3 shadow" alt="..."
-                                        style="height: 110px; width: 110px;">
+                                    <img src="images/brain.png" class="card-img-top rounded-circle  mx-auto mt-3 shadow"
+                                        alt="..." style="height: 110px; width: 110px;">
                                     <div class="card-body">
                                         <button class="btn btn-outline-danger  fw-bold flex-fill w-100 h-100"
                                             data-toggle="modal" data-target="#logical"> <span
@@ -696,8 +794,7 @@
                                 Format
                             </h3>
                             <h4 class="text-center mb-2 mx-auto overflow-hidden" style="color: #087C94;">Kreativity
-                                League will be in 2
-                                Stages, 4 rounds.
+                                League will be in 2 Stages, 4 rounds.
                             </h4>
                             <div class="col-sm-1 mx-auto"></div>
                             <div class="col-sm-5 mb-1 mx-auto">
@@ -705,7 +802,8 @@
                                     <img src="images/prepartion.jpg" class="card-img-top " alt="..."
                                         style="height: 300px;">
                                     <div class="card-body">
-                                        <h5 class="card-title text-center" style="color: #087C94;">Stage 1: Preparation
+                                        <h5 class="card-title text-center" style="color: #087C94;">Stage 1:
+                                            Preparation
                                             Stage
                                         </h5>
 
@@ -713,8 +811,8 @@
                                     <ul class="list-group list-group-flush h-100">
                                         <li class="list-group-item">Round 1: Unleash the Hidden Skills.
                                         </li>
-                                        <li class="list-group-item">Round 2: Mentoring to Nurture Problem-Solving
-                                            Skills.
+                                        <li class="list-group-item">Round 2: : Mentoring to Nurture Problem-Solving
+                                            Skills with Creativity.
 
                                         </li>
 
@@ -726,18 +824,18 @@
                                 <div class="card card2 h-100 mx-auto ">
                                     <img src="images/com.jpg" class="card-img-top " alt="..." style="height: 300px;">
                                     <div class="card-body">
-                                        <h5 class="card-title text-center" style="color: #087C94;">Stage 2: Competition
+                                        <h5 class="card-title text-center" style="color: #087C94;">Stage 2:
+                                            Competition
                                             Stage
                                         </h5>
 
                                     </div>
                                     <ul class="list-group list-group-flush h-100">
-                                        <li class="list-group-item">Round 3: Problem-Solving Challenge at Zonal level.
+                                        <li class="list-group-item">Round 3: Problem-Solving Challenge at Zonal
+                                            level.
                                         </li>
-                                        <li class="list-group-item">Round 4: Zonal winners will compete at the National
-                                            Level.
-
-
+                                        <li class="list-group-item">Round 4: Zonal winners will compete in Finale at the
+                                            National Level.
                                         </li>
 
                                     </ul>
@@ -749,7 +847,8 @@
                     </div>
                     <div class="col-md-3 card-body card-body5 d-none" id="section3">
                         <div class="row  mx-auto ">
-                            <h3 class="text-center text-decoration pt-4   mx-auto " style="color: #087C94;">Procedure
+                            <h3 class="text-center text-decoration pt-4   mx-auto " style="color: #087C94;">
+                                Rules
                             </h3>
                             <!--Age-->
                             <div class="row mt-3 mx-auto mt-0 w-100">
@@ -760,42 +859,14 @@
                                 </div>
                                 <div class="col-8 text-start text-dark  pl-md-2 mx-4">
                                     <p class="my-3 mx-0 px-0">
-                                        Open for students of Ages 8-17 years
+                                        Open for students of Grade 6 and onwards. Categories - Class 6-8 | Class 9-12.
                                     </p>
 
                                 </div>
 
                             </div>
-                            <div class="row mt-3 mx-auto mt-0 w-100">
-                                <div class="col-1"></div>
-                                <div class="col-2 text-end mt-2 ">
-                                    <img src="images/first-round.png" alt="" style="height: 50px; width: 50px;">
 
-                                </div>
-                                <div class="col-8 text-start text-dark  pl-md-2 mx-4">
-                                    <p class="my-3 mx-0 px-0">
-                                        <span style="color: #F80808;"> Age categories for Round 1 </span>: 8-9 years,
-                                        10-11 years, 12-13 years, 14-15 years and 16-7 years.
-                                    </p>
 
-                                </div>
-
-                            </div>
-                            <div class="row mt-3 mx-auto mt-0 w-100">
-                                <div class="col-1"></div>
-                                <div class="col-2 text-end mt-2 ">
-                                    <img src="images/rounds.png" alt="" style="height: 50px; width: 50px;">
-
-                                </div>
-                                <div class="col-8 text-start text-dark  pl-md-2 mx-4">
-                                    <p class="my-3 mx-0 px-0">
-                                        <span style="color: #F80808;"> Age categories for Round 2,3 & 4</span>: 8-10
-                                        years, 11-14 years, 15-17 years.
-                                    </p>
-
-                                </div>
-
-                            </div>
                             <!--Stage 1-->
                             <div class="row mt-3 mx-auto w-100">
                                 <div class="col-1"></div>
@@ -805,8 +876,10 @@
                                 </div>
                                 <div class="col-8 text-start  text-dark pl-md-2 mx-4">
                                     <p class="my-3 mx-0 px-0">
-                                        In Stage 2 competitions Students can compete individually or in a
-                                        team of a maximum of 3 in their respective age group.
+                                        In Stage 2 competitions Students can compete individually or in a team of a
+                                        maximum of 3 in
+                                        their respective age group.
+
                                     </p>
                                 </div>
 
@@ -820,27 +893,16 @@
                                 </div>
                                 <div class="col-8 text-start text-dark  pl-md-2 mx-4">
                                     <p class="my-3 mx-0 px-0">
-                                        First 3 rounds will be in Online mode and the final round will be
-                                        conducted in IIT Delhi.
+                                        First 2 rounds will be in Online mode, R3 round will be conducted in the
+                                        respective zonal area
+                                        and the final round will be conducted in <span style="color:#F80808"> IIT
+                                            Bombay. </span>
+
                                     </p>
                                 </div>
 
                             </div>
-                            <!--Teacher coordinate-->
-                            <div class="row mt-3 mx-auto w-100">
-                                <div class="col-1"></div>
-                                <div class="col-2 text-end mt-2">
-                                    <img src="images/teacher.png" alt="" style="height: 50px; width: 50px;">
-
-                                </div>
-                                <div class="col-8 text-start  text-dark pl-md-2 mx-4">
-                                    <p class="my-3 mx-0 px-0">
-                                        The League consists of multiple rounds, including MCQ Quiz,
-                                        Mentoring, and problem-solving challenges.
-                                    </p>
-                                </div>
-
-                            </div>
+                            
                             <!--English-->
                             <div class="row mt-3 mx-auto pb-5 w-100">
                                 <div class="col-1"></div>
@@ -886,7 +948,8 @@
                                 <div class="card shadow h-100 mx-auto w-auto card3">
 
                                     <img src="images/internet.png" alt="" class="w-auto h-auto mx-5 py-3">
-                                    <p class="text-center fw-bold" style="color: #F80808;">A stable internet connection
+                                    <p class="text-center fw-bold" style="color: #F80808;">A stable internet
+                                        connection
                                         (Wifi,Mobile Data)
                                     </p>
 
@@ -912,9 +975,9 @@
                         <div class="row my-3">
                             <div class="col-12 text-center mx-auto">
                                 <h2 class="mt-2" style="color: #087C94;">Round 4 will be conducted offline in <span
-                                        class="fw-bold"> IIT Delhi. </span></h2>
+                                        class="fw-bold"> IIT Bombay </span></h2>
 
-                                <img src="images/iit delhi.png" alt="" height="100px" width="100px">
+                                <img src="images/iiitbombay.png" alt="" height="100px" width="100px">
 
 
                             </div>
@@ -925,24 +988,25 @@
         </div>
     </div>
 
-    
+
     <!--Important Dates-->
     <div class="container">
         <div class="row " id="impdates">
-            <h2 class="text-center my-2" style="color: #087C94;">Important Dates</h2>
-            <div class="col-2"></div>
-            <div class="col-xxl-8 col-xl-8 col-lg-8 col-md-8 my-2">
+            <h3 class="text-center my-2" style="color: #087C94;">Important Dates</h3>
 
-                <div class="row ">
-                    <div class="col-sm-4 h-100 w-50">
+            <div class="col-xxl-12 col-xl-12 col-lg-12 col-md-12 my-2">
+
+                <div class="row mx-auto">
+                    <div class="col-md-6 h-100 w-50">
                         <div class="card mb-3 h-100 border border-danger border-3 shadow zoom">
                             <div class="row g-0">
-                                <div class="col-md-5 d-flex align-items-center border border-danger  bg-danger ">
-                                    <p class="fw-bold text-center mx-auto text-white pt-2">15th July’23</p>
+                                <div class="col-md-4 d-flex align-items-center border border-danger  bg-danger ">
+                                    <p class="fw-bold text-center mx-auto text-white pt-2">1 August'23</p>
                                 </div>
-                                <div class="col-md-7">
+                                <div class="col-md-8">
                                     <div class="card-body">
-                                        <p class="card-title fw-bold px-auto py-3" style="color: #087C94;">Registration
+                                        <p class="card-title fw-bold px-auto py-3" style="color: #087C94;">
+                                            Registration
                                             Starts
                                         </p>
 
@@ -952,15 +1016,16 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-4 h-100 w-50">
+                    <div class="col-md-6 h-100 w-50">
                         <div class="card mb-3 h-100 border border-warning border-3 shadow ">
                             <div class="row g-0">
-                                <div class="col-md-5 d-flex align-items-center border border-warning  bg-warning ">
-                                    <p class="fw-bold text-center mx-auto text-white pt-2">05 Sept’23</p>
+                                <div class="col-md-4 d-flex align-items-center border border-warning  bg-warning ">
+                                    <p class="fw-bold text-center mx-auto text-white pt-2">07 Oct’23</p>
                                 </div>
-                                <div class="col-md-7">
+                                <div class="col-md-8">
                                     <div class="card-body">
-                                        <p class="card-title fw-bold px-auto py-3" style="color: #087C94;">Registration
+                                        <p class="card-title fw-bold px-auto py-3" style="color: #087C94;">
+                                            Registration
                                             ends
                                         </p>
 
@@ -972,16 +1037,17 @@
                     </div>
 
                 </div>
-                <div class="row ">
-                    <div class="col-sm-4 h-100 w-50">
+                <div class="row mx-auto">
+                    <div class="col-sm-6 h-100 w-50">
                         <div class="card mb-3 h-100 border border-primary border-3 shadow ">
                             <div class="row g-0">
-                                <div class="col-md-5 d-flex align-items-center border border-primary  bg-primary ">
-                                    <p class="fw-bold text-center mx-auto text-white pt-2">30 Sept’23</p>
+                                <div class="col-md-4 d-flex align-items-center border border-primary  bg-primary ">
+                                    <p class="fw-bold text-center mx-auto text-white pt-2">21 Oct’23</p>
                                 </div>
-                                <div class="col-md-7">
+                                <div class="col-md-8">
                                     <div class="card-body">
-                                        <p class="card-title fw-bold px-auto py-3" style="color: #087C94;">Stage 1 Round
+                                        <p class="card-title fw-bold px-auto py-3" style="color: #087C94;">Stage 1
+                                            Round
                                             1
                                         </p>
 
@@ -991,16 +1057,16 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-4 h-100 w-50">
+                    <div class="col-sm-6 h-100 w-50">
                         <div class="card mb-3 h-100 border border-success border-3 shadow ">
                             <div class="row g-0">
-                                <div class="col-md-5 d-flex align-items-center border border-success  bg-success ">
-                                    <p class="fw-bold text-center mx-auto text-white pt-2">07 Oct’23</p>
+                                <div class="col-md-4 d-flex align-items-center border border-success  bg-success ">
+                                    <p class="fw-bold text-center mx-auto text-white pt-2">27 Oct’23</p>
                                 </div>
-                                <div class="col-md-7">
+                                <div class="col-md-8">
                                     <div class="card-body">
-                                        <p class="card-title fw-bold px-auto py-3" style="color: #087C94;">Stage 1
-                                            Result
+                                        <p class="card-title fw-bold px-auto py-3" style="color: #087C94;">Stage 1 Round 1
+                                            Result &nbsp;
                                         </p>
 
 
@@ -1011,17 +1077,18 @@
                     </div>
 
                 </div>
-                <div class="row ">
-                    <div class="col-sm-4 h-100 w-50">
+                <div class="row mx-auto">
+                    <div class="col-sm-6 h-100 w-50">
                         <div class="card mb-3 h-100 border border-danger border-3 shadow ">
                             <div class="row g-0">
-                                <div class="col-md-5 d-flex align-items-center border border-danger  bg-danger ">
-                                    <p class="fw-bold text-center mx-auto text-white pt-2">20-24
-                                        Oct’23</p>
+                                <div class="col-md-4 d-flex align-items-center border border-danger  bg-danger ">
+                                    <p class="fw-bold text-center mx-auto text-white pt-2">18-21
+                                        Nov’23</p>
                                 </div>
-                                <div class="col-md-7">
-                                    <div class="card-body">
-                                        <p class="card-title fw-bold px-auto py-3" style="color: #087C94;">Stage 1 Round
+                                <div class="col-md-8">
+                                    <div class="card-body ">
+                                        <p class="card-title fw-bold px-auto py-3" style="color: #087C94;">Stage 1
+                                            Round
                                             2
                                         </p>
 
@@ -1031,15 +1098,16 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-4 h-100 w-50">
+                    <div class="col-sm-6 h-100 w-50">
                         <div class="card mb-3 h-100 border border-warning border-3 shadow ">
                             <div class="row g-0">
-                                <div class="col-md-5 d-flex align-items-center border border-warning  bg-warning ">
-                                    <p class="fw-bold text-center mx-auto text-white pt-2">28-30 Oct’23</p>
+                                <div class="col-md-4 d-flex align-items-center border border-warning  bg-warning ">
+                                    <p class="fw-bold text-center mx-auto text-white pt-3">25-30 Nov’23</p>
                                 </div>
-                                <div class="col-md-7">
-                                    <div class="card-body">
-                                        <p class="card-title fw-bold px-auto py-3" style="color: #087C94;">Stage 2 Round
+                                <div class="col-md-8">
+                                    <div class="card-body ">
+                                        <p class="card-title fw-bold px-auto py-3" style="color: #087C94;">Stage 2
+                                            Round
                                             3
                                         </p>
 
@@ -1051,20 +1119,18 @@
                     </div>
 
                 </div>
-                <div class="row ">
-                    <div class="col-sm-4 h-100 w-50">
-                        <div class="card mb-3 h-100 border border-danger border-3 shadow ">
+                <div class="row mx-auto">
+                    <div class="col-sm-6 h-100 w-50">
+                        <div class="card mb-3 h-100 border border-primary border-3 shadow ">
                             <div class="row g-0">
-                                <div class="col-md-5 d-flex align-items-center border border-danger  bg-danger ">
-                                    <p class="fw-bold text-center mx-auto text-white pt-1">05
-                                        Nov’23</p>
+                                <div class="col-md-4 d-flex align-items-center border border-primary  bg-primary ">
+                                    <p class="fw-bold text-center mx-auto text-white pt-2">05 Dec’23</p>
                                 </div>
-                                <div class="col-md-7">
-                                    <div class="card-body">
-                                        <p class="card-title fw-bold px-auto py-1" style="color: #087C94;">Stage 2
-                                            Round 3
-                                            Result
-                                            2
+                                <div class="col-md-8">
+                                    <div class="card-body ">
+                                        <p class="card-title fw-bold px-auto py-3" style="color: #087C94;">Stage 2
+                                            Round
+                                            3 Result
                                         </p>
 
 
@@ -1073,16 +1139,17 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-4 h-100 w-50">
-                        <div class="card mb-3 h-100 border border-warning border-3 shadow ">
+                    <div class="col-sm-6 h-100 w-50">
+                        <div class="card mb-3 h-100 border border-success border-3 shadow ">
                             <div class="row g-0">
-                                <div class="col-md-5 d-flex align-items-center border border-warning  bg-warning ">
-                                    <p class="fw-bold text-center mx-auto text-white pt-2">25 Nov'23</p>
+                                <div class="col-md-4 d-flex align-items-center border border-success  bg-success ">
+                                    <p class="fw-bold text-center mx-auto text-white pt-3">27 Dec’23</p>
                                 </div>
-                                <div class="col-md-7">
-                                    <div class="card-body">
-                                        <p class="card-title fw-bold px-auto py-3" style="color: #087C94;">Stage 2 Round
-                                            4
+                                <div class="col-md-8">
+                                    <div class="card-body ">
+                                        <p class="card-title fw-bold px-auto py-3" style="color: #087C94;">Stage 2
+                                            Round
+                                            4 Begins
                                         </p>
 
 
@@ -1095,15 +1162,20 @@
                 </div>
 
             </div>
+            <hr>
+            <div class="container text-center">
+                <p class=" h3" style="color: #087C94;">  Kreativity League Report Round 1</p>
+                <img src="images/Klreport.png " class="w-50" alt="" >
+            </div>
 
-           
             <!--Multiply buttons-->
             <div class="container my-2 ">
                 <hr>
                 <div class="row w-auto " style="background-color: #FF4F00;">
                     <h3 class=" text-center my-2 text-white" id="prize">Rewards</h3>
-                    <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-6 col-sm-12 my-1 order-2">
-                        <div class="card text-center">
+                    <h4 class="text-center" style="color: white">Prize Worth Rs. 5 lakhs </h4>
+                    <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-12 my-1 order-2 mb-3">
+                        <div class="card text-center mx-auto">
                             <img src="images/student.png" class="card-img-top pt-4 mx-auto w-50 h-50 rounded-2 "
                                 alt="Card Image">
                             <div class="card-body">
@@ -1117,23 +1189,9 @@
                         </div>
 
                     </div>
-                    <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-6 col-sm-12 my-1 order-4">
-                        <div class="card text-center">
-                            <img src="images/parents (4).png" class="card-img-top pt-4 mx-auto w-50 h-50 rounded-2 "
-                                alt="Card Image">
-                            <div class="card-body">
 
-                                <div class="center-button">
-                                    <button class="btn btn-secondary mx-1 fw-bold flex-fill w-100 h-100"
-                                        onclick="toggleSection(6)">For
-                                        Parents</button>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                    <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-6 col-sm-12 my-1 order-3">
-                        <div class="card text-center">
+                    <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-12 my-1 order-3 mb-3">
+                        <div class="card text-center mx-auto">
                             <img src="images/teacher.png" class="card-img-top pt-4 mx-auto w-50 h-50 rounded-2 "
                                 alt="Card Image">
                             <div class="card-body">
@@ -1147,8 +1205,8 @@
                         </div>
 
                     </div>
-                    <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-6 col-sm-12 my-1 order-1">
-                        <div class="card text-center">
+                    <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-12 my-1 order-1 mb-3">
+                        <div class="card text-center mx-auto">
                             <img src="images/school (4).png" class="card-img-top pt-4 mx-auto w-50 h-50 rounded-2 "
                                 alt="Card Image">
                             <div class="card-body">
@@ -1172,13 +1230,11 @@
                                 </div>
                                 <!--For Students-->
                                 <ul>
-                                    <li> Participate in a national-
-                                        level Competition</li>
-                                    <li> Unleash Creativity Mentoring</li>
+                                    <li> Exposure at national level</li>
+                                    <li> Unleash Creativity & Olympiad</li>
                                     <li> Participation Certificate</li>
-                                    <li> Winners will visit ISRO with all
-                                        expenses borne by organizers</li>
                                     <li> Trophies for winners</li>
+                                    <li> Winners will visit <span style="color: #e63922;"> ISRO </span></li>
                                     <li> Scholarships for STEM Program</li>
                                 </ul>
                             </div>
@@ -1204,9 +1260,9 @@
                                     <li> Gift Hamper</li>
                                     <li> Appreciation Certificate</li>
 
-                                    <li> Winning Student’s teacher
-                                        coordinator will visit <span style="color: #FF4F00;"> ISRO</span></li>
-
+                                    <li>Experiential Learning Workshop</li>
+                                    <li>Teacher coordinator with wins
+                                        will visit <span style="color: #F80808;"> ISRO </span></li>
                                 </ul>
                             </div>
                             <!--For Schools-->
@@ -1215,14 +1271,15 @@
                                     <h3>For Schools</h3>
                                 </div>
                                 <ul>
-                                    <li> Participate in a national-
-                                        level Competition</li>
-                                    <li> Unleash Creativity Mentoring</li>
-                                    <li> Participation Certificate</li>
-                                    <li> Winners will visit ISRO with all
-                                        expenses borne by organizers</li>
-                                    <li> Trophies for winners</li>
-                                    <li> Scholarships for STEM Program</li>
+                                    <li> Visibility & Branding PAN India</li>
+                                    <li> Partner School Certificate</li>
+                                    <li> Trophy for the Winner school</li>
+                                    <li> Media Coverage</li>
+
+                                    <li> Zonal Winners will get the
+                                        opportunity to visit <span style="color: #e63922;"> IITB </span></li>
+                                    <li>Finale Winners will get the
+                                        opportunity to visit <span style="color: #F80808;"> ISRO </span></li>
                                 </ul>
                             </div>
                         </div>
@@ -1230,6 +1287,7 @@
                 </div>
             </div>
             <!--Mock Test-->
+            <!--
             <div class="container my-2 mx-auto" id="mocktest">
                 <div class="row">
                     <div class="col-3"></div>
@@ -1243,29 +1301,32 @@
                     <div class="col-3"></div>
                 </div>
             </div>
+        -->
             <!--Video Testimonial-->
 
             <!--Sponsars By-->
             <div class="container " style="background-color: #087C94;">
                 <div class="text-center text-white mt-3">
-                    <h3>Hosted By:</h3>
+                    <h3>Hosted By</h3>
                 </div>
                 <div class="row mx-auto">
                     <div class="card mb-3 my-1 w-100">
                         <div class="row g-1">
                             <div class="col-md-4 my-4">
-                                <img class="card-img-left img-fluid rounded mx-auto d-block my-5 mx-3  shadow-lg w-100"
+                                <img class="card-img-left img-fluid rounded mx-auto d-block my-5  mx-3  shadow w-100"
                                     src="images/abl logo.jpeg" />
 
                             </div>
                             <div class="col-md-8 mt-5">
                                 <div class="card-body">
                                     <p>The idea of "ABL Education" is conceptualized after decades of experience in
-                                        Educaiton, to develop "Activity Based Learning" in existing Education system.
+                                        Educaiton, to develop "Activity Based Learning" in existing Education
+                                        system.
                                         This
                                         resulted in a vision of creating an education environment which not only
                                         provides
-                                        the school children with theoretical knowledge, but also develops their mind in
+                                        the school children with theoretical knowledge, but also develops their mind
+                                        in
                                         order to understand and apply those concepts practically.</p>
                                     <a href="http://www.ableducation.com/" type="button" class="btn btn-danger"
                                         style="background-color: #087C94;">More Details </a>
@@ -1277,22 +1338,20 @@
                 </div>
             </div>
             <!--Associated Partners-->
-
-            <h3 class="text-center my-4" style="color: #087C94;">Associated Partners</h3>
+            <!--
+            <h3 class="text-center my-4" style="color: #087C94;">Supported By</h3>
             <div class="container">
                 <section class="customer-logos slider">
-                    <div class="slide"><a href="#"><img src="https://i.postimg.cc/sx9bXn46/logo.png"></a></div>
-                    <div class="slide"><a href="#"><img src="https://i.postimg.cc/4x3jfQ7P/logo1.png"></a></div>
-                    <div class="slide"><a href="#"><img src="https://i.postimg.cc/SQWBDsb6/logo2.png"></a></div>
-                    <div class="slide"><a href="#"><img src="https://i.postimg.cc/nLj57V1Q/logo3.png"></a></div>
-                    <div class="slide"><a href="#"><img src="https://i.postimg.cc/zBTctd6z/logo4.png"></a></div>
-                    <div class="slide"><a href="#"><img src="https://i.postimg.cc/25stxpH9/logo5.png"></a></div>
-                    <div class="slide"><a href="#"><img src="https://i.postimg.cc/yYjwCbdW/logo6.png"></a></div>
-                    <div class="slide"><a href="#"><img src="https://i.postimg.cc/NfBWVcQW/logo7.png"></a></div>
-                    <div class="slide"><a href="#"><img src="https://i.postimg.cc/zGP6VHTr/logo8.png"></a></div>
+                    <div class="slide"><a href="#"><img src="images/iit delhi.png"></a></div>
+                    <div class="slide"><a href="#"><img src="images/isro.png"></a></div>
+                    <div class="slide my-3"><a href="#"><img src="images/abl logo.jpeg" ></a></div>
+                    <div class="slide"><a href="#"><img src="images/iiitbombay.png"></a></div>
+                    <div class="slide"><a href="#"><img src="images/thinkandinnovate-removebg-preview.png"></a></div>
+                    <div class="slide"><a href="#"><img src="images/Brainfeed-Logo-1.png"></a></div>
+                    
                 </section>
             </div>
-
+        -->
             <div class="container bg-dark mx-auto px-0 my-3" id="contact">
                 <!-- Footer -->
                 <footer class="text-center text-lg-start text-white">
@@ -1312,7 +1371,10 @@
                                                 style="text-decoration: underline;color: white;">About us</a></li>
 
                                         <li class="list-group-item text-white bg-dark"><a href="stem.html"
-                                                style="text-decoration: underline;color: white;">Problem-Solving</a>
+                                                style="text-decoration: underline;color: white;">Nurture Skills</a>
+                                        </li>
+                                        <li class="list-group-item text-white bg-dark"><a href="privacy.html"
+                                                style="text-decoration: underline;color: white;">Privacy Policies</a>
                                         </li>
 
                                     </ul>
@@ -1333,9 +1395,10 @@
                                 <!-- Grid column -->
                                 <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
                                     <h6 class="text-uppercase mb-4 font-weight-bold">Contact</h6>
-                                    <p><i class="fas fa-home mr-3"></i> G-233, Ground Floor, Sector 63, Noida - 201301,
+                                    <p><i class="fas fa-home mr-3"></i> G-233, Ground Floor, Sector 63, Noida -
+                                        201301,
                                         Uttar Pradesh</p>
-                                    <p><i class="fas fa-envelope mr-3"></i>&nbsp;info@KreativityLeague.in</p>
+                                    <p><i class="fas fa-envelope mr-3"></i>&nbsp;info@KreativityLeague.com</p>
                                     <p><i class="fas fa-phone mr-3"></i> 9211786062
                                     </p>
 
@@ -1349,18 +1412,22 @@
                                     <!-- Facebook -->
                                     <div>
                                         <a class="btn btn-primary btn-floating m-2" style="background-color: #3b5998"
-                                            href="#!" role="button"><i class="fab fa-facebook-f"></i></a>
+                                            href="https://www.facebook.com/kreativityLeague" role="button"><i
+                                                class="fab fa-facebook-f"></i></a>
                                         <!-- youtube -->
                                         <a class="btn btn-primary btn-floating m-2" style="background-color: #e63922"
-                                            href="#!" role="button"><i class="fab fa-youtube"></i></a>
+                                            href="https://www.youtube.com/ableducation" role="button"><i
+                                                class="fab fa-youtube"></i></a>
 
                                         <!-- Instagram -->
                                         <a class="btn btn-primary btn-floating m-2" style="background-color: #ac2bac"
-                                            href="#!" role="button"><i class="fab fa-instagram"></i></a>
+                                            href="https://www.instagram.com/abl_education/" role="button"><i
+                                                class="fab fa-instagram"></i></a>
 
                                         <!-- Linkedin -->
                                         <a class="btn btn-primary btn-floating m-2" style="background-color: #0082ca"
-                                            href="#!" role="button"><i class="fab fa-linkedin-in"></i></a>
+                                            href="https://www.linkedin.com/company/kreativity-league/" role="button"><i
+                                                class="fab fa-linkedin-in"></i></a>
 
                                     </div>
                                 </div>
@@ -1380,7 +1447,6 @@
             <script src='https://cdnjs.cloudflare.com/ajax/libs/Swiper/7.0.6/swiper-bundle.min.js'></script>
             <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
             <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.js"></script>
-
             <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
             <script type="text/javascript" src="./javascript/script.js"></script>

@@ -20,7 +20,7 @@ var swiper = new Swiper('.swiper', {
 /* Associated partners*/
 $(function () {
     $('.customer-logos').slick({
-        slidesToShow: 6,
+        slidesToShow: 3,
         slidesToScroll: 1,
         autoplay: true,
         autoplaySpeed: 1500,
@@ -88,18 +88,19 @@ var activeSection = 1; // Set the default active section
 
 // Show the default section on page load
 document.addEventListener("DOMContentLoaded", function (event) {
-    var defaultSection = document.getElementById("section1");
+    var defaultSection = document.getElementById("section9");
     defaultSection.classList.add("show");
     defaultSection.classList.remove("d-none");
 });
 function toggleSection(sectionNumber) {
     var selectedSection = document.getElementById("section" + sectionNumber);
-
+   
     // Hide all sections
     var sections = document.getElementsByClassName("card-body5");
     for (var i = 0; i < sections.length; i++) {
         sections[i].classList.remove("show");
         sections[i].classList.add("d-none");
+        
     }
 
     // Show the selected section

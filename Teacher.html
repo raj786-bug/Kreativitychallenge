@@ -51,38 +51,33 @@
 
 
             <div class="text-center">
-                <p class=" h2 ">Student Personal Information</p>
+                <p class=" h2 ">School Information</p>
             </div>
             <div class="row w-100 mx-auto">
                 <div class=" col-lg-6 col-md-6 col-sm-12 w-lg-50 w-md-100 w-sm-100">
-                    <label for="inputEmail4" class="form-label mx-2 required1">Student Name</label>
-                    <input type="text" class="form-control " placeholder="First name" aria-label="First name"
-                    id="studentName" name="studentname">
+                    <label for="inputEmail4" class="form-label mx-2 required1">Teacher Name</label>
+                    <input type="text" class="form-control " placeholder="Teacher name" aria-label="First name"
+                   id="teacherName" name="teacherName">
                 </div>
                 <div class=" col-lg-6 col-md-6 col-sm-12 w-lg-50 w-md-100 w-sm-100">
-                    <label for="inputEmail4" class="form-label mx-2 required1">Date of birth</label>
-                    <input type="text" class="form-control" placeholder="Day/Month/Year" aria-label="dob" id="dob"
-                        name="dob">
+                    <label for="inputEmail4" class="form-label mx-2 required1">School Name</label>
+                    <input type="text" class="form-control " placeholder="School name" aria-label="First name"
+                   id="schoolName" name="schoolName">
                 </div>
 
             </div>
             <div class="row w-100 mx-auto">
 
                 <div class="col-lg-6 col-md-6 col-sm-12 w-lg-50 w-md-100 w-sm-100">
-                    <label for="inputEmail4" class="form-label mx-2 required1">Parent's Name</label>
-                    <input type="text" class="form-control" placeholder="Parents Name" aria-label="First name"
-                        id="parentsName" name="parentsName">
+                    <label for="inputEmail4" class="form-label mx-2 required1">City</label>
+                    <input type="text" class="form-control" placeholder="City" aria-label="First name"
+                      id="city" name="city">
                 </div>
                 <div class="col-lg-6 col-md-6 col-sm-12 w-lg-50 w-md-100 w-sm-100">
-                    <label for="inputEmail4" class="form-label mx-2 required1">Relationship with
-                        Student</label>
-
-                    <select class="form-select" aria-label="Default select example" id="relationship">
-                        <option selected>Relationship with Students</option>
-                        <option value="father">Father</option>
-                        <option value="mother">Mother</option>
-                        <option value="others" id="others">Others</option>
-                    </select>
+                    <label for="inputEmail4" class="form-label mx-2 required1">Pincode</label>
+                   
+                    <input type="tel" class="form-control w-100" aria-label="First name" placeholder="Pincode" id="pincode" name="pincode">
+                    
                 </div>
 
             </div>
@@ -93,76 +88,45 @@
                     <input type="email" class="form-control" placeholder="Email" aria-label="email" id="email"
                         name="email">
                 </div>
-                <div class="col-lg-6 col-md-12 col-sm-12 w-lg-50 w-md-100 w-sm-100">
-
-                    <div id="otherOptionContainer" class="invisible ">
-                        <label for="otherOption" class="mt-0  required">Please specify:</label>
-                        <input class="form-control mt-2" placeholder="Relationship with Student" aria-label="First name"
-                            id="otherOption">
-                    </div>
-
-                </div>
+               
+            
 
             </div>
-            <div class="row w-100 mx-auto">
-                <div class="col-lg-6 col-md-6 col-sm-12 w-lg-50 w-md-100 w-sm-100">
-                    <label for="inputEmail4" class="form-label mx-2 required1">Password</label>
-                    <input type="password" id="password" name="password" class="form-control w-100"
-                        placeholder="Password">
-                    <p class="fw-bold required1">Password must be more then 5 character</p>
-
-                </div>
-                <div class="col-lg-6 col-md-6 col-sm-12 w-lg-50 w-md-100 w-sm-100">
-
-                    <label for="password" class="form-label mx-2   required1">ReType Password:</label>
-                    <input class="form-control " placeholder="Retype Password" aria-label="First name"
-                        id="confirm password" type="password">
-
-                </div>
-
-                <!--    
-                                <div class="col-md-5 w-50">
-
-                                    <label for="inputEmail4" class="form-label mx-2 required1">Password</label>
-                                    <input type="password" id="password" class="form-control "
-                                        placeholder="Password">
-                                    <p class="fw-bold required1">Password must be more then 5 character</p>
-
-
-                                </div>
-                                <div class="col-md-5 w-50>
-                                    <label for="inputEmail4" class="form-label mx-2 required1">Re-Type
-                                        Password</label>
-                                    <input type="password" class="form-control mx-3" placeholder="retypepassword"
-                                        aria-label="First name" id="confirmpassword">
-                                    <div class="form-text confirm-message"></div>
-                                </div>
-                            -->
-            </div>
+           
             <div class="row w-100 mx-auto text-center">
                 <div class="col-lg-12 col-md-12 col-sm-12 w-lg-50 w-md-100 w-sm-100 mt-2">
                     <label for="inputEmail4" class="form-label mx-2 required1">Whatsapp Number</label>
                     <input type="tel" id="whatsappNumber" name="whatsappNumber" class="form-control w-100" aria-label="First name" >
                     <a type="button" class="d-block  btn btn-next text-white w-50 mx-auto mt-2"
-                        style="background-color: #e7260c ;" href="#" onclick="sendOTP()">Send Otp</a>
+                        style="background-color: #e7260c ;" href="#" onclick="sendOTP()" id="sendotp">Send Otp</a>
                     <p id="otpStatus"></p>
-                    <label for="inputEmail4" class="form-label mx-2  required1">Enter
+                    <div class="d-none" id="verify">
+                    <label for="inputEmail4" class="form-label mx-2  required1 ">Enter
                         OTP:</label>
                     <input type="numbers" id="otpInput" class="form-control mb-2 w-50 mx-auto" aria-label="First name">
-                    <a type="button" class="btn btn-next w-50 text-white w-25 mx-auto mt-2"
-                        style="background-color: #32911a ;" href="#" onclick="verifyOTP()">Verify Otp</a>
+                    <a type="button" class="btn btn-next w-50 text-white w-25 mx-auto mt-2 "
+                        style="background-color: #32911a ;" href="#" onclick="verifyOTP1()">Verify Otp</a>
 
                     <div id="message"></div>
+                    </div>
+                </div>
+
+
+            </div>
+            <hr>
+            <div class="row w-100 mx-auto text-center">
+                <div class="col-lg-12 col-md-12 col-sm-12 w-lg-50 w-md-100 w-sm-100 mt-2">
+                   <button id="excel" class="btn btn-md bg-danger text-white fw-bold disabled">Download File to fill student details </button>
 
                 </div>
 
 
             </div>
-
+<hr>
             <div class="row my-3 w-lg-50 w-md-100 w-sm-100">
 
                 <a type="submit" class="btn btn-next text-white w-25 mx-auto disabled"
-                    style="background-color: #087C94 ;" id="myButton">Submit</a>
+                    style="background-color: #087C94 ;" id="tsubmit">Submit</a>
 
             </div>
 
@@ -186,27 +150,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
  <script type="text/javascript">
     // JavaScript code using Fetch API
-$(document).ready(function () {
-  $("#dob").datepicker({
-    changeMonth: true,
-    changeYear: true,
-    dateFormat: 'dd/mm/yy',
-    yearRange: "2006:2016",
-    maxDate: new Date('2016-01-01'),
-    minDate: new Date('2006-01-01')
-  });
-  $('#relationship').change(function () {
-    var selectedOption = $(this).val();
-    var otherOptionContainer = $('#otherOptionContainer');
 
-    if (selectedOption === 'others') {
-      otherOptionContainer.removeClass('invisible');
-      console.log("others");
-    } else {
-      otherOptionContainer.addClass('invisible');
-    }
-  });
-});
+ 
 function getIp(callback) {
   fetch('https://ipinfo.io/json?token=858ba90da1836c', { headers: { 'Accept': 'application/json' } })
     .then((resp) => resp.json())
@@ -228,39 +173,32 @@ const phoneInput = window.intlTelInput(phoneInputField, {
 
 const selectedCountryCode = phoneInput.getSelectedCountryData().dialCode;
 console.log(selectedCountryCode); // Output: e.g., "+91" for India
-const myButton = document.getElementById('myButton');
+const tsubmit = document.getElementById('tsubmit');
+const excel = document.getElementById('excel');
 
 
-myButton.addEventListener('click', function () {
+tsubmit.addEventListener('click', function () {
   const selectedCountryCode = phoneInput.getSelectedCountryData().dialCode;
   console.log(selectedCountryCode); // Output: e.g., "+91" for India
   // Data to be sent in the POST request
-  let studentname = document.querySelector('#studentName').value;
-  let dob = document.querySelector('#dob').value;
+  let teacherName = document.querySelector('#teacherName').value;
+  let schoolname = document.querySelector('#schoolName').value;
   let email = document.querySelector('#email').value
-  let parentsName = document.querySelector('#parentsName').value
-  let password = document.querySelector('#password').value
+  let pincode = document.querySelector('#pincode').value
+  let city = document.querySelector('#city').value
   let whatsappNumber = selectedCountryCode+document.querySelector('#whatsappNumber').value
-  let relation = document.querySelector('#relationship').value;
-  if (relation === "others") {
-    relationship = document.querySelector("#otherOption").value;
-  }
-  else {
-    relationship = document.querySelector("#relationship").value;
-  }
-
+ 
   const postData = {
-    studentName: studentname,
-    dob: dob,
+    teacherName: teacherName,
+    schoolName: schoolname,
     email: email,
-    parentsName: parentsName,
-    password: password,
-    relationship: relationship,
-    whatsappNumber: whatsappNumber
+    pinCode: pincode,
+    city: city,
+    phoneNumber: whatsappNumber
   };
 
   // Make a POST request using Fetch API
-  fetch('http://localhost:8080/students/std', {
+  fetch('http://localhost:8080/school/send', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
@@ -278,7 +216,50 @@ myButton.addEventListener('click', function () {
     });
 
 });
- </script>
-</body>
+document.getElementById('excel').addEventListener('click', function() {
+            // Make a request to the backend API
+            fetch('http://localhost:8080/school/downloadExcel', {
+                method: 'GET',
+            })
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Network response was not ok');
+                }
+                return response.blob(); // Extract the binary data (Excel file) from the response
+            })
+            .then(blobData => {
+                // Create a URL for the blob data
+                const url = window.URL.createObjectURL(blobData);
 
+                // Create a temporary link element to download the Excel file
+                const a = document.createElement('a');
+                a.href = url;
+                a.download = 'schoolData.xlsx'; // You can customize the filename here
+                document.body.appendChild(a);
+                a.click(); // Simulate a click on the link to trigger the download
+                a.remove(); // Clean up the temporary link
+            })
+            .catch(error => {
+                console.error('Error:', error);
+            });
+        });
+
+        const verify=document.getElementById('verify');
+        sendotp.addEventListener('click', function() {
+    // Check the current display state of the div
+    const isHidden = verify.classList.contains('d-none');
+
+    // Toggle the display state
+    if (isHidden) {
+        verify.classList.remove('d-none');
+    } else {
+        verify.classList.add('d-block');
+    }
+});
+    </script>
+</body>
 </html>
+
+
+
+

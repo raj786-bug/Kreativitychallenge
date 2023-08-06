@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/register.css">
+    <!-- FontAwesome 4.7.0 CDN -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+        integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.css">
+    <link rel="stylesheet" href="./javascript/jquery-ui-1.13.2.custom/jquery-ui.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css" />
+
+    <style>
+        .success-message {
+            color: green
+        }
+
+        .error-message {
+            color: red;
+        }
+
+        .required1::after {
+            content: "*";
+            color: red;
+            font-size: 20px;
+            margin: 5px;
+        }
+
+        @media only screen and (max-width: 576px) {
+            .card {
+                margin-top: 100px;
+                max-height: fit-content;
+                font-weight: bold;
+            }
+
+
+        }
+    </style>
+</head>
+
+<body class="bg">
+    <!--REGISTER HTML-->
+    <div class="container mx-auto w-75 h-100">
+
+        <form role="form" action="" method="post" class="registration-form my-2 mt-2 bg-white rounded">
+
+
+            <div class="text-center">
+                <p class=" h2 ">School Information</p>
+            </div>
+            <div class="row w-100 mx-auto">
+                <div class=" col-lg-6 col-md-6 col-sm-12 w-lg-50 w-md-100 w-sm-100">
+                    <label for="inputEmail4" class="form-label mx-2 required1">Teacher Name</label>
+                    <input type="text" class="form-control " placeholder="Teacher Name" aria-label="First name">
+                </div>
+                <div class=" col-lg-6 col-md-6 col-sm-12 w-lg-50 w-md-100 w-sm-100">
+                    <label for="inputEmail4" class="form-label mx-2 required1">School Name</label>
+                    <input type="text" class="form-control " placeholder="School Name" aria-label="First name">
+                </div>
+
+            </div>
+            <div class="row w-100 mx-auto">
+
+                <div class="col-lg-6 col-md-6 col-sm-12 w-lg-50 w-md-100 w-sm-100">
+                    <label for="inputEmail4" class="form-label mx-2 required1">City</label>
+                    <input type="text" class="form-control" placeholder="City" aria-label="First name">
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12 w-lg-50 w-md-100 w-sm-100">
+                    <label for="inputEmail4" class="form-label mx-2 required1">Pin Code</label>
+                    <input type="number" class="form-control" placeholder="Pincode" aria-label="First name">
+                  
+
+                </div>
+
+            </div>
+            <div class="row w-100 mx-auto">
+
+                <div class="col-lg-12 col-md-12 col-sm-12 w-lg-100 w-md-100 w-sm-100 text-center">
+                    <label for="inputEmail4" class="form-label mx-2 required1">Email</label>
+                    <input type="email" class="form-control" placeholder="email id" aria-label="email">
+                </div>
+                
+                
+
+            </div>
+          
+
+                <!--    
+                                <div class="col-md-5 w-50">
+
+                                    <label for="inputEmail4" class="form-label mx-2 required1">Password</label>
+                                    <input type="password" id="password" class="form-control "
+                                        placeholder="Password">
+                                    <p class="fw-bold required1">Password must be more then 5 character</p>
+
+
+                                </div>
+                                <div class="col-md-5 w-50>
+                                    <label for="inputEmail4" class="form-label mx-2 required1">Re-Type
+                                        Password</label>
+                                    <input type="password" class="form-control mx-3" placeholder="retypepassword"
+                                        aria-label="First name" id="confirmpassword">
+                                    <div class="form-text confirm-message"></div>
+                                </div>
+                            -->
+            
+            <div class="row w-100 mx-auto text-center">
+                <div class="col-lg-12 col-md-12 col-sm-12 w-lg-50 w-md-100 w-sm-100 mt-2">
+                    <label for="inputEmail4" class="form-label mx-2 required1">Whatsapp Number</label>
+                    <input type="tel" class="form-control" placeholder="Whatsapp Number" aria-label="email" id="phone">
+                    <a type="button" class="d-block  btn btn-next text-white w-50 mx-auto mt-2"
+                        style="background-color: #e7260c ;" href="#" onclick="sendOTP()">Send Otp</a>
+                    <div class="invisible">
+                        <label for="inputEmail4" class="form-label mx-2  required1 ">Enter
+                            OTP:</label>
+                        <input type="numbers" id="otpInput" class="form-control mb-2 w-50 mx-auto" aria-label="First name">
+                        <a type="button" class="btn btn-next w-50 text-white w-25 mx-auto mt-2"
+                            style="background-color: #32911a ;" href="phoneotp.html" onclick="verifyOTP()">Verify Otp</a>
+                        <p id="otpStatus"></p>
+
+                    </div>
+                </div>
+
+                
+            </div>
+
+            <div class="row my-3 w-lg-50 w-md-100 w-sm-100">
+
+                <a type="submit" class="btn  w-50 btn-next text-white w-25 mx-auto my-2 invisible"
+                    style="background-color: #087C94 ;" href="">submit</a>
+            </div>
+
+
+            
+
+        </form>
+
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="./javascript/jquery.backstretch.min.js"></script>
+
+    <script src="./javascript/register.js"></script>
+    <script src="./javascript/jquery-ui-1.13.2.custom/jquery-ui.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.8.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.8.0/firebase-auth.js"></script>
+    <!-- Add intl-tel-input JS and utils JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#dob").datepicker({
+                changeMonth: true,
+                changeYear: true,
+                dateFormat: 'dd/mm/yy',
+                yearRange: "2006:2016",
+                maxDate: new Date('2016-01-01'),
+                minDate: new Date('2006-01-01')
+            });
+            $('#selectOption').change(function () {
+                var selectedOption = $(this).val();
+                var otherOptionContainer = $('#otherOptionContainer');
+
+                if (selectedOption === 'others') {
+                    otherOptionContainer.removeClass('invisible');
+                    console.log("others");
+                } else {
+                    otherOptionContainer.addClass('invisible');
+                }
+            });
+        });
+        function getIp(callback) {
+            fetch('https://ipinfo.io/json?token=858ba90da1836c', { headers: { 'Accept': 'application/json' } })
+                .then((resp) => resp.json())
+                .catch(() => {
+                    return {
+                        country: 'in',
+                    };
+                })
+                .then((resp) => callback(resp.country));
+        }
+
+        const phoneInputField = document.querySelector("#phone");
+        const phoneInput = window.intlTelInput(phoneInputField, {
+            initialCountry: "IN",
+            geoIpLookup: getIp,
+            utilsScript:
+                "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
+        });
+
+
+        var phone = document.querySelector('#phone').value;
+        console.log(phone);
+    </script>
+</body>
+
+</html>
